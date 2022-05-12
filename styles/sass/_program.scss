@@ -23,6 +23,7 @@
     grid-template-rows: 3.5rem;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
     padding: 0 3rem;
     border-top: 1px solid $txtColor;
     border-bottom: 1px solid $txtColor;
@@ -91,6 +92,29 @@
 
         .time{
             font-weight: 500;
+        }
+    }
+}
+
+@media (max-width: 800px) and (min-width: 640px) { 
+    .schedule_item{
+        padding: 1rem 3rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .schedule_item{
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 3.5rem 3.5rem;
+        padding: 1rem;
+        justify-content: flex-start;
+        gap: 0.5rem;
+
+        .extra{
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 3;
         }
     }
 }

@@ -74,11 +74,12 @@ span {
 header {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[11];
-      grid-template-columns: repeat(11, 1fr);
-  -ms-grid-rows: (2.8rem)[12];
-      grid-template-rows: repeat(12, 2.8rem);
+  -ms-grid-columns: (9%)[11];
+      grid-template-columns: repeat(11, 9%);
+  -ms-grid-rows: (2.8rem)[11];
+      grid-template-rows: repeat(11, 2.8rem);
   margin: 3rem 3rem 0 3rem;
+  padding: 3rem 3rem 0 3rem;
   max-height: 100%;
 }
 
@@ -94,22 +95,24 @@ header {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  z-index: 10;
 }
 
 .header_text {
   -ms-grid-column: 3;
       grid-column-start: 3;
   grid-column-end: 11;
-  -ms-grid-row: 6;
-      grid-row-start: 6;
-  grid-row-end: 8;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  -ms-grid-row: 5;
+      grid-row-start: 5;
+  grid-row-end: 9;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   text-align: center;
-  z-index: 10;
+  z-index: 20;
 }
 
 .fien {
@@ -730,6 +733,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 1rem;
   padding: 0 3rem;
   border-top: 1px solid #FFFFFF;
   border-bottom: 1px solid #FFFFFF;
@@ -799,6 +803,34 @@ header {
   font-weight: 500;
 }
 
+@media (max-width: 800px) and (min-width: 640px) {
+  .schedule_item {
+    padding: 1rem 3rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .schedule_item {
+    -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
+    -ms-grid-rows: 3.5rem 3.5rem;
+        grid-template-rows: 3.5rem 3.5rem;
+    padding: 1rem;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 0.5rem;
+  }
+  .schedule_item .extra {
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 3;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
 .blocks {
   display: -ms-grid;
   display: grid;
@@ -824,6 +856,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  padding: 3rem;
 }
 
 .blocks h2 {
@@ -832,7 +865,6 @@ header {
 
 .dresscode {
   background-color: #191919;
-  padding: 3rem;
 }
 
 .dresscode a {
@@ -843,11 +875,31 @@ header {
 
 .convinced {
   background-color: #2489E7;
-  padding: 3rem;
 }
 
 .convinced .button {
   color: #000000;
   text-decoration: none;
+}
+
+@media (max-width: 800px) and (min-width: 640px) {
+  .blocks {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .blocks {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+  .blocks div {
+    padding: 2rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

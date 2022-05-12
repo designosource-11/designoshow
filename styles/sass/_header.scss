@@ -1,8 +1,9 @@
 header{
     display: grid;
-    grid-template-columns: repeat(11, 1fr);
-    grid-template-rows: repeat(12, 2.8rem);
+    grid-template-columns: repeat(11, 9%);
+    grid-template-rows: repeat(11, 2.8rem);
     margin: 3rem 3rem 0 3rem;
+    padding: 3rem 3rem 0 3rem;
     max-height: 100%;
 }
 
@@ -13,17 +14,18 @@ header{
     grid-row-end: 2;
     justify-self: center;
     align-self: center;
+    z-index: 10;
 }
 
 .header_text{
     grid-column-start: 3;
     grid-column-end: 11;
-    grid-row-start: 6;
-    grid-row-end: 8;
-    justify-self: center;
+    grid-row-start: 5;
+    grid-row-end: 9;
+    justify-content: center;
     align-self: center;
     text-align: center;
-    z-index: 10;
+    z-index: 20;
 }
 
 .fien{
