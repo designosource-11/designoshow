@@ -1,0 +1,46 @@
+/*Font initialising*/
+@font-face {
+    font-family: 'Telegraf';
+    src: url('../assets/fonts/Telegraf-Bold.woff2') format('woff2'),
+        url('../assets/fonts/Telegraf-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Telegraf';
+    src: url('../assets/fonts/Telegraf-Regular.woff2') format('woff2'),
+        url('../assets/fonts/Telegraf-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'pixel';
+    src: url(../assets/fonts/pixelfj8pt1.normal.otf);
+}
+
+/* General variables */
+$bgColor: #000000;
+$bgOffGrey: #191919;
+$bgTextGrey: #262626;
+$txtColor: #FFFFFF;
+$txtColorDark: #000000;
+$primaryBlue: #2489E7;
+$primaryYellow: #FFEB40;
+$primaryGreen: #50C78D;
+$primaryRed: #E8422C;
+
+$primaryFont: Telegraf;
+$primaryFontBold: telegraf-bold;
+$secondaryFont: pixel;
+
+$mxBodyDesktop: 5rem;
+$mxBodyMobile: 1rem;
+
+body{
+    background-color: $bgColor;
+    color: $txtColor;
+}

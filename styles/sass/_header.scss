@@ -1,0 +1,12 @@
+header{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    margin: 3rem;
+}
+
+.logo{
+    grid-column: 6/7;
+    grid-row: 1/2;
+}
+
