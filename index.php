@@ -141,5 +141,6 @@
             <p class="button pixel">Sign up</p>
         </div>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>

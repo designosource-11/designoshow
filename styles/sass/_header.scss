@@ -342,10 +342,17 @@ header{
     color: $primaryYellow;    
     text-transform: uppercase;
     margin-bottom: 8rem;
+    animation: updown 2s ease-in-out 0s infinite alternate;
 
     span{
         font-size: 0.6rem;
         color: $txtColor;
         margin: 0 0.5rem;
     }
+}
+
+@keyframes updown {
+    from {transform:translateY(0);}
+    to {transform:translateY(1rem);}
+    
 }
