@@ -107,3 +107,35 @@ document.querySelector(".stefan").addEventListener("mouseleave", ()=>{
     document.querySelector(".stefan_2").classList.add("hidden");
     document.querySelector(".stefan_3").classList.add("hidden");
 });
+
+document.querySelector(".schedule_item_1").addEventListener("mouseenter", ()=>{
+    document.querySelector(".schedule_item_1").style.padding = "0.25rem 3rem";    
+});
+
+document.querySelector(".schedule_item_1").addEventListener("mouseleave", ()=>{
+    document.querySelector(".schedule_item_1").style.padding = "0 3rem";
+});
+
+document.querySelector(".schedule_item_2").addEventListener("mouseenter", ()=>{
+    document.querySelector(".schedule_item_2").style.padding = "0.25rem 3rem";   
+});
+
+document.querySelector(".schedule_item_2").addEventListener("mouseleave", ()=>{
+    document.querySelector(".schedule_item_2").style.padding = "0 3rem";
+});
+
+document.querySelector(".schedule_item_3").addEventListener("mouseenter", ()=>{
+    document.querySelector(".schedule_item_3").style.padding = "0.25rem 3rem";   
+});
+
+document.querySelector(".schedule_item_3").addEventListener("mouseleave", ()=>{
+    document.querySelector(".schedule_item_3").style.padding = "0 3rem";
+});
+
+document.querySelector(".schedule_item_4").addEventListener("mouseenter", ()=>{
+    document.querySelector(".schedule_item_4").style.padding = "0.25rem 3rem";   
+});
+
+document.querySelector(".schedule_item_4").addEventListener("mouseleave", ()=>{
+    document.querySelector(".schedule_item_4").style.padding = "0 3rem";
+});

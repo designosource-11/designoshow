@@ -671,6 +671,107 @@ header {
       align-self: center;
 }
 
+.program {
+  display: block;
+  margin: 6rem 3rem;
+}
+
+.program h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.program p {
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.schedule {
+  margin: 2rem 0;
+}
+
+.schedule_item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 1fr;
+  -ms-grid-rows: 3.5rem;
+      grid-template-rows: 3.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 3rem;
+  border-top: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.schedule_item p {
+  text-align: left;
+}
+
+.schedule_item_1 {
+  border-top: 2px solid #FFFFFF;
+}
+
+.schedule_item_1:hover {
+  background-color: #2489E7;
+}
+
+.schedule_item_1:hover p {
+  font-weight: 700;
+}
+
+.schedule_item_1:hover .time {
+  font-weight: 500;
+}
+
+.schedule_item_2:hover {
+  background-color: #50C78D;
+  color: #000000;
+}
+
+.schedule_item_2:hover p {
+  font-weight: 700;
+}
+
+.schedule_item_2:hover .time {
+  font-weight: 500;
+}
+
+.schedule_item_3:hover {
+  background-color: #FFEB40;
+  color: #000000;
+}
+
+.schedule_item_3:hover p {
+  font-weight: 700;
+}
+
+.schedule_item_3:hover .time {
+  font-weight: 500;
+}
+
+.schedule_item_4 {
+  border-bottom: 2px solid #FFFFFF;
+}
+
+.schedule_item_4:hover {
+  background-color: #E8422C;
+}
+
+.schedule_item_4:hover p {
+  font-weight: 700;
+}
+
+.schedule_item_4:hover .time {
+  font-weight: 500;
+}
+
 .sign_up form .select_dinos {
   position: absolute;
   bottom: 100px;
@@ -696,4 +797,5 @@ header {
   width: 100px;
   margin: 0;
 }
+  
 /*# sourceMappingURL=styles.css.map */
