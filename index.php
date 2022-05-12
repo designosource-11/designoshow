@@ -101,6 +101,23 @@
                 </div>
             </div>
             <button class="button" type="submit" name="submit">Sign up</button>
+            <div class="select_dinos">
+                <div class="description">
+                    <p>Select all images with</p>
+                    <p>dinos</p>
+                </div>
+                <div class="dinos">
+                    <img src="./assets/insta/Stephan.jpg" alt="">
+                    <img src="./assets/insta/Sarah.jpg" alt="">
+                    <img src="./assets/insta/Linde_en_David.jpg" alt="">
+                    <img src="./assets/insta/Brian.jpg" alt="">
+                    <img src="./assets/insta/Bastien.jpg" alt="">
+                    <img src="./assets/insta/Tom.jpg" alt="">
+                    <img src="./assets/insta/Stefan.jpg" alt="">
+                    <img src="./assets/insta/Bailey.jpg" alt="">
+                    <img src="./assets/insta/Nathalie.jpg" alt="">
+                </div>
+            </div>
         </form>
     </div>
     <div class="program">

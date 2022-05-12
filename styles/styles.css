@@ -544,6 +544,14 @@ header {
           align-items: center;
 }
 
+.sign_up h2 {
+  margin-bottom: 15px;
+}
+
+.sign_up p {
+  margin: 2px 0;
+}
+
 .sign_up form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -556,15 +564,17 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   width: 30%;
+  position: relative;
 }
 
 .sign_up form input {
   height: 50px;
-  margin: 20px 0;
+  margin: 15px 0;
   background-color: #191919;
-  border: 2px solid #fff;
+  border: 2px solid #FFFFFF;
   text-align: center;
-  color: #fff;
+  color: #FFFFFF;
+  font-size: 20px;
 }
 
 .sign_up form .agree {
@@ -578,13 +588,14 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 30px 0;
 }
 
 .sign_up form .agree .checkbox_replace {
   width: 30px;
   height: 30px;
   margin: 0;
-  border: 2px solid #fff;
+  border: 2px solid #FFFFFF;
 }
 
 .sign_up form .agree .checkbox_replace .checkbox {
@@ -614,13 +625,14 @@ header {
   height: 75px;
   background-color: #191919;
   padding: 10px 20px;
+  margin-bottom: 30px;
 }
 
 .sign_up form .raawrcaptcha .checkbox_replace {
   width: 30px;
   height: 30px;
   margin: 0;
-  border: 2px solid #fff;
+  border: 2px solid #FFFFFF;
 }
 
 .sign_up form .raawrcaptcha .checkbox_replace .checkbox {
@@ -759,4 +771,31 @@ header {
 .schedule_item_4:hover .time {
   font-weight: 500;
 }
+
+.sign_up form .select_dinos {
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+  width: 308px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #000000;
+}
+
+.sign_up form .select_dinos .description {
+  height: 50px;
+  background-color: #50C78D;
+  font-size: 20px;
+}
+
+.sign_up form .select_dinos .dinos {
+  width: 100%;
+}
+
+.sign_up form .select_dinos .dinos img {
+  width: 100px;
+  margin: 0;
+}
+  
 /*# sourceMappingURL=styles.css.map */
