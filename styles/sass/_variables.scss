@@ -40,6 +40,12 @@ $secondaryFont: pixel;
 $mxBodyDesktop: 5rem;
 $mxBodyMobile: 1rem;
 
+h1{
+    font-family: $primaryFont;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
 body{
     background-color: $bgColor;
     color: $txtColor;
