@@ -70,10 +70,10 @@
             <img class="nathalie_2 hidden" src="./assets/team/teammember-9.jpg">
             <img class="nathalie_3 hidden" src="./assets/team/teammember-9.jpg">
         </div>
-        <div class="sign_up">
-            <p class="pixel">Sign up</p>
-        </div>
     </header>
+    <section class="cta">        
+        <p class="pixel"><span class="pixel">v</span> Sign up <span class="pixel">v</span></p>
+    </section>
     <div class="sign_up">
         <h2 class="bold">Signosaurus up</h2>
         <p>Be there or be rectangular.</p>

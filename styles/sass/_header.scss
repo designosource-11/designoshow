@@ -2,7 +2,7 @@ header{
     display: grid;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(12, 2.8rem);
-    margin: 3rem;
+    margin: 3rem 3rem 0 3rem;
     max-height: 100%;
 }
 
@@ -333,4 +333,19 @@ header{
     position: absolute;
     bottom: 2rem;
     right: 2rem;
+}
+
+.cta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $primaryYellow;    
+    text-transform: uppercase;
+    margin-bottom: 8rem;
+
+    span{
+        font-size: 0.6rem;
+        color: $txtColor;
+        margin: 0 0.5rem;
+    }
 }

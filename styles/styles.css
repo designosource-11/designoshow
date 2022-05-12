@@ -68,7 +68,7 @@ header {
       grid-template-columns: repeat(11, 1fr);
   -ms-grid-rows: (2.8rem)[12];
       grid-template-rows: repeat(12, 2.8rem);
-  margin: 3rem;
+  margin: 3rem 3rem 0 3rem;
   max-height: 100%;
 }
 
@@ -475,6 +475,27 @@ header {
   position: absolute;
   bottom: 2rem;
   right: 2rem;
+}
+
+.cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFEB40;
+  text-transform: uppercase;
+  margin-bottom: 8rem;
+}
+
+.cta span {
+  font-size: 0.6rem;
+  color: #FFFFFF;
+  margin: 0 0.5rem;
 }
 
 .sign_up {
