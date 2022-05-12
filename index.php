@@ -74,7 +74,7 @@
     <section class="cta">        
         <p class="pixel"><span class="pixel">v</span> Sign up <span class="pixel">v</span></p>
     </section>
-    <div class="sign_up">
+    <div class="sign_up" id="sign_up">
         <h2 class="bold">Signosaurus up</h2>
         <p>Be there or be rectangular.</p>
         <p>Sign up for dino&#39;s performing live on stage.</p>
@@ -155,7 +155,7 @@
         <div class="convinced">
             <h2 class="bold">Convinced now?</h2>
             <p>Some dumb text Some dumb</p>
-            <p class="button pixel">Sign up</p>
+            <a href="#sign_up" class="button pixel">Sign up</a>
         </div>
     </div>
     <script src="index.js"></script>
