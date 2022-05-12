@@ -17,5 +17,67 @@
             border: 2px solid #fff;
             text-align: center;
         }
+
+        .agree {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .checkbox_replace {
+                width: 30px;
+                height: 30px;
+                margin: 0;
+                border: 2px solid #fff;
+            }
+
+            .checkbox {
+                visibility: hidden;
+            }
+
+            p {
+                width: 80%;
+            }
+        }
+
+        .raawrcaptcha {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-sizing: border-box;
+            width: 100%;
+            height: 75px;
+            background-color: #191919;
+            padding: 10px 20px;
+
+            .checkbox_replace {
+                width: 30px;
+                height: 30px;
+                margin: 0;
+                border: 2px solid #fff;
+            }
+
+            .checkbox {
+                visibility: hidden;
+            }
+
+            .raawrcaptcha_icon {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 100%;
+
+                img {
+                    height: 70%;
+                }
+
+                p {
+                    font-size: 10px;
+                    margin: 0;
+                }
+            }
+
+            
+        }
     }
 }

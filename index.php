@@ -83,13 +83,21 @@
             <input placeholder="Last name" type="text" name="" id="">
             <input placeholder="E-mail" type="text" name="" id="">
             <div class="agree">
-                <input type="checkbox" name="" id="">
+                <div class="checkbox_replace">
+                    <input class="checkbox" type="checkbox" name="" id="">
+                </div>
                 <p>I agree to getting updates on this event by mail</p>
             </div>
             <div class="raawrcaptcha">
-                <input type="checkbox" name="" id="">
+                <div class="checkbox_replace">
+                    <input class="checkbox" type="checkbox" name="" id="">
+                </div>
                 <p>I'm not a dino</p>
-                <img src="" alt="">
+                <div class="raawrcaptcha_icon">
+                    <img src="assets/raawrcaptcha.svg" alt="">
+                    <p>raawrcaptcha</p>
+                </div>
+                
             </div>
             <input class="button" type="button" name="" id="">
         </form>
