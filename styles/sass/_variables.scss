@@ -49,4 +49,25 @@ h1{
 body{
     background-color: $bgColor;
     color: $txtColor;
+    font-family: $primaryFont;
+}
+
+.bold {
+    font-family: $primaryFontBold;
+}
+
+.pixel {
+    font-family: $secondaryFont;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 18px;
 }

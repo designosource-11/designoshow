@@ -12,7 +12,7 @@
         <img class="logo" src="assets/logo-designosource-wit.svg" alt="logo">
         <div class="header_text">
             <h2 class="pixel">Get your *ss over to</h2>
-            <h1>The Dinoshow</h1>
+            <h1 class="bold">The Dinoshow</h1>
             <p>21 juni, 18u30 @Stadschouwburg, Mechelen</p>
         </div>
         <div class="fien">
@@ -71,17 +71,21 @@
             <div class="nathalie_3"></div>
         </div>
         <div class="sign_up">
-            <p>Sign up</p>
+            <p class="pixel">Sign up</p>
         </div>
     </header>
     <div class="sign_up">
-        <h2>Signosaurus up</h2>
-        <p>Be there or be rectangular. Sign up for dino’s performing live on stage.</p>
+        <h2 class="bold">Signosaurus up</h2>
+        <p>Be there or be rectangular.</p>
+        <p>Sign up for dino&#39;s performing live on stage.</p>
         <form action="">
-            <input type="text" name="" id="">
-            <input type="text" name="" id="">
-            <input type="text" name="" id="">
-            <input type="checkbox" name="" id="">
+            <input placeholder="First name" type="text" name="" id="">
+            <input placeholder="Last name" type="text" name="" id="">
+            <input placeholder="E-mail" type="text" name="" id="">
+            <div class="agree">
+                <input type="checkbox" name="" id="">
+                <p>I agree to getting updates on this event by mail</p>
+            </div>
             <div class="raawrcaptcha">
                 <input type="checkbox" name="" id="">
                 <p>I'm not a dino</p>
@@ -91,41 +95,41 @@
         </form>
     </div>
     <div class="program">
-        <h2>The program</h2>
+        <h2 class="bold">The program</h2>
         <p>Write something funny here pls nicolas. While ur at it change the headline too.</p>
         <div class="schedule">
             <div class="schedule_item">
-                <p class="time">18u30</p>
-                <p class="description">Doors open @Stadschouwburg, Mechelen</p>
-                <p class="extra">Something dumb</p>
+                <p class="time pixel">18u30</p>
+                <p class="description regular">Doors open @Stadschouwburg, Mechelen</p>
+                <p class="extra regular">Something dumb</p>
             </div>
             <div class="schedule_item">
-                <p class="time">19u</p>
-                <p class="description">Start Dinoshow</p>
-                <p class="extra">Some funny text</p>
+                <p class="time pixel">19u</p>
+                <p class="description regular">Start Dinoshow</p>
+                <p class="extra regular">Some funny text</p>
             </div>
             <div class="schedule_item">
-                <p class="time">21u</p>
-                <p class="description">Einde show & start receptie</p>
-                <p class="extra">More funny text</p>
+                <p class="time pixel">21u</p>
+                <p class="description regular">Einde show & start receptie</p>
+                <p class="extra regular">More funny text</p>
             </div>
             <div class="schedule_item">
-                <p class="time">22u30</p>
-                <p class="description">Einde</p>
-                <p class="extra">Ya you get it</p>
+                <p class="time pixel">22u30</p>
+                <p class="description regular">Einde</p>
+                <p class="extra regular">Ya you get it</p>
             </div>
         </div>
     </div>
     <div class="blocks">
         <div class="dresscode">
-            <h2>A dresscode, rlly?</h2>
+            <h2 class="bold">A dresscode, rlly?</h2>
             <p>Old school red carpet chique with a touch of crazy. Win a prize with the best outfit</p>
-            <a href="#">View outfit moodboard</a>
+            <a class="pixel" href="#">View outfit moodboard</a>
         </div>
         <div class="convinced">
-            <h2>Convinced now?</h2>
+            <h2 class="bold">Convinced now?</h2>
             <p>Some dumb text Some dumb</p>
-            <p class="button"></p>
+            <p class="button pixel"></p>
         </div>
     </div>
 </body>
