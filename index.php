@@ -11,29 +11,29 @@
     <header>
         <img class="logo" src="assets/logo-designosource-wit.svg" alt="logo">
         <div class="header_text">
-            <p>Get your *ss over to</p>
+            <h2 class="pixel">Get your *ss over to</h2>
             <h1>The Dinoshow</h1>
             <p>21 juni, 18u30 @Stadschouwburg, Mechelen</p>
         </div>
         <div class="fien">
-            <div class="fien_1"></div>
-            <div class="fien_2"></div>
-            <div class="fien_3"></div>
+            <img class="fien_1" src="./assets/team/teammember-1.jpg">
+            <img class="fien_2" src="./assets/team/teammember-1.jpg">
+            <img class="fien_3" src="./assets/team/teammember-1.jpg">
         </div>
         <div class="sarah">
-            <div class="sarah_1"></div>
-            <div class="sarah_2"></div>
-            <div class="sarah_3"></div>
+            <img class="sarah_1" src="./assets/team/teammember-6.jpg">
+            <img class="sarah_2" src="./assets/team/teammember-6.jpg">
+            <img class="sarah_3" src="./assets/team/teammember-6.jpg">
         </div>
         <div class="brian">
-            <div class="brian_1"></div>
-            <div class="brian_2"></div>
-            <div class="brian_3"></div>
+            <img class="brian_1" src="./assets/team/teammember-5.jpg">
+            <img class="brian_2" src="./assets/team/teammember-5.jpg">
+            <img class="brian_3" src="./assets/team/teammember-5.jpg">
         </div>
         <div class="nicolas">
-            <div class="nicolas_1"></div>
-            <div class="nicolas_2"></div>
-            <div class="nicolas_3"></div>
+            <img class="nicolas_1" src="./assets/team/teammember-7.jpg">
+            <img class="nicolas_2" src="./assets/team/teammember-7.jpg">
+            <img class="nicolas_3" src="./assets/team/teammember-7.jpg">
         </div>
         <div class="bailey">
             <div class="bailey_1"></div>
@@ -41,9 +41,9 @@
             <div class="bailey_3"></div>
         </div>
         <div class="bastien">
-            <div class="bastien_1"></div>
-            <div class="bastien_2"></div>
-            <div class="bastien_3"></div>
+            <img class="bastien_1" src="./assets/team/teammember-3.jpg">
+            <img class="bastien_2" src="./assets/team/teammember-3.jpg">
+            <img class="bastien_3" src="./assets/team/teammember-3.jpg">
         </div>
         <div class="stefan">
             <div class="stefan_1"></div>
