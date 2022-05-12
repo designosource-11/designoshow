@@ -490,12 +490,36 @@ header {
   color: #FFEB40;
   text-transform: uppercase;
   margin-bottom: 8rem;
+  -webkit-animation: updown 2s ease-in-out 0s infinite alternate;
+          animation: updown 2s ease-in-out 0s infinite alternate;
 }
 
 .cta span {
   font-size: 0.6rem;
   color: #FFFFFF;
   margin: 0 0.5rem;
+}
+
+@-webkit-keyframes updown {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+  }
+}
+
+@keyframes updown {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+  }
 }
 
 .sign_up {

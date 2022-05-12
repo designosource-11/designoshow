@@ -140,5 +140,6 @@
             <p class="button pixel"></p>
         </div>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
