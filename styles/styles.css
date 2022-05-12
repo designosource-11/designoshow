@@ -61,6 +61,15 @@ span {
   display: none;
 }
 
+.button {
+  background-color: #FFEB40 !important;
+  font-family: pixel;
+  width: 100px;
+  height: 40px !important;
+  cursor: pointer;
+  border: none;
+}
+
 header {
   display: -ms-grid;
   display: grid;
@@ -531,6 +540,7 @@ header {
   background-color: #191919;
   border: 2px solid #fff;
   text-align: center;
+  color: #fff;
 }
 
 .sign_up form .agree {
@@ -553,8 +563,11 @@ header {
   border: 2px solid #fff;
 }
 
-.sign_up form .agree .checkbox {
+.sign_up form .agree .checkbox_replace .checkbox {
   visibility: hidden;
+  position: absolute;
+  top: -100000px;
+  left: -1000000px;
 }
 
 .sign_up form .agree p {
@@ -586,8 +599,11 @@ header {
   border: 2px solid #fff;
 }
 
-.sign_up form .raawrcaptcha .checkbox {
+.sign_up form .raawrcaptcha .checkbox_replace .checkbox {
   visibility: hidden;
+  position: absolute;
+  top: -100000px;
+  left: -1000000px;
 }
 
 .sign_up form .raawrcaptcha .raawrcaptcha_icon {
@@ -611,5 +627,11 @@ header {
 .sign_up form .raawrcaptcha .raawrcaptcha_icon p {
   font-size: 10px;
   margin: 0;
+}
+
+.sign_up form .button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -78,28 +78,29 @@
         <h2 class="bold">Signosaurus up</h2>
         <p>Be there or be rectangular.</p>
         <p>Sign up for dino&#39;s performing live on stage.</p>
-        <form action="">
-            <input placeholder="First name" type="text" name="" id="">
-            <input placeholder="Last name" type="text" name="" id="">
-            <input placeholder="E-mail" type="text" name="" id="">
+        <form action="" method="POST">
+            <input placeholder="First name" type="text" name="first_name" id="">
+            <input placeholder="Last name" type="text" name="last_name" id="">
+            <input placeholder="E-mail" type="text" name="email" id="">
             <div class="agree">
                 <div class="checkbox_replace">
                     <input class="checkbox" type="checkbox" name="" id="">
+                    <img src="./assets/checkmark.svg" alt="">
                 </div>
                 <p>I agree to getting updates on this event by mail</p>
             </div>
             <div class="raawrcaptcha">
                 <div class="checkbox_replace">
                     <input class="checkbox" type="checkbox" name="" id="">
+                    <img src="./assets/checkmark.svg" alt="">
                 </div>
                 <p>I'm not a dino</p>
                 <div class="raawrcaptcha_icon">
                     <img src="assets/raawrcaptcha.svg" alt="">
                     <p>raawrcaptcha</p>
                 </div>
-                
             </div>
-            <input class="button" type="button" name="" id="">
+            <button class="button" type="submit" name="submit">Sign up</button>
         </form>
     </div>
     <div class="program">
@@ -137,7 +138,7 @@
         <div class="convinced">
             <h2 class="bold">Convinced now?</h2>
             <p>Some dumb text Some dumb</p>
-            <p class="button pixel"></p>
+            <p class="button pixel">Sign up</p>
         </div>
     </div>
 </body>
