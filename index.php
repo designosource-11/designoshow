@@ -11,64 +11,64 @@
     <header>
         <img class="logo" src="assets/logo-designosource-wit.svg" alt="logo">
         <div class="header_text">
-            <h2 class="pixel">Get your *ss over to</h2>
+            <h2 class="pixel">Get your <span>&#42;</span>ss over to</h2>
             <h1 class="bold">The Dinoshow</h1>
             <p>21 juni, 18u30 @Stadschouwburg, Mechelen</p>
         </div>
         <div class="fien">
             <img class="fien_1" src="./assets/team/teammember-1.jpg">
-            <img class="fien_2" src="./assets/team/teammember-1.jpg">
-            <img class="fien_3" src="./assets/team/teammember-1.jpg">
+            <img class="fien_2 hidden" src="./assets/team/teammember-1.jpg">
+            <img class="fien_3 hidden" src="./assets/team/teammember-1.jpg">
         </div>
         <div class="sarah">
             <img class="sarah_1" src="./assets/team/teammember-6.jpg">
-            <img class="sarah_2" src="./assets/team/teammember-6.jpg">
-            <img class="sarah_3" src="./assets/team/teammember-6.jpg">
+            <img class="sarah_2 hidden" src="./assets/team/teammember-6.jpg">
+            <img class="sarah_3 hidden" src="./assets/team/teammember-6.jpg">
         </div>
         <div class="brian">
             <img class="brian_1" src="./assets/team/teammember-5.jpg">
-            <img class="brian_2" src="./assets/team/teammember-5.jpg">
-            <img class="brian_3" src="./assets/team/teammember-5.jpg">
+            <img class="brian_2 hidden" src="./assets/team/teammember-5.jpg">
+            <img class="brian_3 hidden" src="./assets/team/teammember-5.jpg">
         </div>
         <div class="nicolas">
             <img class="nicolas_1" src="./assets/team/teammember-7.jpg">
-            <img class="nicolas_2" src="./assets/team/teammember-7.jpg">
-            <img class="nicolas_3" src="./assets/team/teammember-7.jpg">
+            <img class="nicolas_2 hidden" src="./assets/team/teammember-7.jpg">
+            <img class="nicolas_3 hidden" src="./assets/team/teammember-7.jpg">
         </div>
         <div class="bailey">
-            <div class="bailey_1"></div>
-            <div class="bailey_2"></div>
-            <div class="bailey_3"></div>
+            <img class="bailey_1" src="./assets/team/teammember-4.jpg">
+            <img class="bailey_2 hidden" src="./assets/team/teammember-4.jpg">
+            <img class="bailey_3 hidden" src="./assets/team/teammember-4.jpg">
         </div>
         <div class="bastien">
             <img class="bastien_1" src="./assets/team/teammember-3.jpg">
-            <img class="bastien_2" src="./assets/team/teammember-3.jpg">
-            <img class="bastien_3" src="./assets/team/teammember-3.jpg">
+            <img class="bastien_2 hidden" src="./assets/team/teammember-3.jpg">
+            <img class="bastien_3 hidden" src="./assets/team/teammember-3.jpg">
         </div>
         <div class="stefan">
-            <div class="stefan_1"></div>
-            <div class="stefan_2"></div>
-            <div class="stefan_3"></div>
+            <img class="stefan_1" src="./assets/team/teammember-10.jpg">
+            <img class="stefan_2 hidden" src="./assets/team/teammember-10.jpg">
+            <img class="stefan_3 hidden" src="./assets/team/teammember-10.jpg">
         </div>
         <div class="nick">
-            <div class="nick_1"></div>
-            <div class="nick_2"></div>
-            <div class="nick_3"></div>
+            <img class="nick_1" src="./assets/team/teammember-11.jpg">
+            <img class="nick_2 hidden" src="./assets/team/teammember-11.jpg">
+            <img class="nick_3 hidden" src="./assets/team/teammember-11.jpg">
         </div>
         <div class="stephanie">
-            <div class="stephanie_1"></div>
-            <div class="stephanie_2"></div>
-            <div class="stephanie_3"></div>
+            <img class="stephanie_1" src="./assets/team/teammember-2.jpg">
+            <img class="stephanie_2 hidden" src="./assets/team/teammember-2.jpg">
+            <img class="stephanie_3 hidden" src="./assets/team/teammember-2.jpg">
         </div>
         <div class="ilya">
-            <div class="ilya_1"></div>
-            <div class="ilya_2"></div>
-            <div class="ilya_3"></div>
+            <img class="ilya_1" src="./assets/team/teammember-8.jpg">
+            <img class="ilya_2 hidden" src="./assets/team/teammember-8.jpg">
+            <img class="ilya_3 hidden" src="./assets/team/teammember-8.jpg">
         </div>
         <div class="nathalie">
-            <div class="nathalie_1"></div>
-            <div class="nathalie_2"></div>
-            <div class="nathalie_3"></div>
+            <img class="nathalie_1" src="./assets/team/teammember-9.jpg">
+            <img class="nathalie_2 hidden" src="./assets/team/teammember-9.jpg">
+            <img class="nathalie_3 hidden" src="./assets/team/teammember-9.jpg">
         </div>
         <div class="sign_up">
             <p class="pixel">Sign up</p>
