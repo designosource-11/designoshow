@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/styles.css"></link>
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Designoshow 2022</title>
 </head>
 <body>
@@ -12,7 +12,7 @@
         <img class="logo" src="assets/logo-designosource-wit.svg" alt="logo">
         <div class="header_text">
             <p>Get your *ss over to</p>
-            <p>The Designoshow</p>
+            <h1>The Dinoshow</h1>
             <p>21 juni, 18u30 @Stadschouwburg, Mechelen</p>
         </div>
         <div class="fien">
