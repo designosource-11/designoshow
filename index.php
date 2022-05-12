@@ -104,25 +104,25 @@
         </form>
     </div>
     <div class="program">
-        <h2 class="bold">The program</h2>
-        <p>Write something funny here pls nicolas. While ur at it change the headline too.</p>
+        <h2 class="bold">T-program Rex</h2>
+        <p>We would like to welcome y’all to a dinoshow so great and <br>formidable that even a comet can’t take it down.</p>
         <div class="schedule">
-            <div class="schedule_item">
+            <div class="schedule_item schedule_item_1">
                 <p class="time pixel">18u30</p>
                 <p class="description regular">Doors open @Stadschouwburg, Mechelen</p>
                 <p class="extra regular">Something dumb</p>
             </div>
-            <div class="schedule_item">
-                <p class="time pixel">19u</p>
+            <div class="schedule_item schedule_item_2">
+                <p class="time pixel">19u00</p>
                 <p class="description regular">Start Dinoshow</p>
                 <p class="extra regular">Some funny text</p>
             </div>
-            <div class="schedule_item">
-                <p class="time pixel">21u</p>
+            <div class="schedule_item schedule_item_3">
+                <p class="time pixel">21u00</p>
                 <p class="description regular">Einde show & start receptie</p>
                 <p class="extra regular">More funny text</p>
             </div>
-            <div class="schedule_item">
+            <div class="schedule_item schedule_item_4">
                 <p class="time pixel">22u30</p>
                 <p class="description regular">Einde</p>
                 <p class="extra regular">Ya you get it</p>
