@@ -40,12 +40,6 @@ $secondaryFont: pixel;
 $mxBodyDesktop: 5rem;
 $mxBodyMobile: 1rem;
 
-h1{
-    font-family: $primaryFont;
-    font-size: 3rem;
-    text-transform: uppercase;
-}
-
 body{
     background-color: $bgColor;
     color: $txtColor;
@@ -60,14 +54,28 @@ body{
     font-family: $secondaryFont;
 }
 
-h1 {
-    font-size: 80px;
+h1{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    margin: -0.1rem;
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin: -0.1rem;
 }
 
 p {
-    font-size: 18px;
+    font-size: 1rem;
+}
+
+span{
+    font-family: $primaryFont;
+    font-size: 2.3rem;
+    margin-right: 0.1rem;
+}
+
+.hidden{
+    display: none;
 }

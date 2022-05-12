@@ -21,12 +21,6 @@
 }
 
 /* General variables */
-h1 {
-  font-family: Telegraf;
-  font-size: 3rem;
-  text-transform: uppercase;
-}
-
 body {
   background-color: #000000;
   color: #FFFFFF;
@@ -42,28 +36,46 @@ body {
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  margin: -0.1rem;
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin: -0.1rem;
 }
 
 p {
-  font-size: 18px;
+  font-size: 1rem;
+}
+
+span {
+  font-family: Telegraf;
+  font-size: 2.3rem;
+  margin-right: 0.1rem;
+}
+
+.hidden {
+  display: none;
 }
 
 header {
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: (1fr)[11];
+      grid-template-columns: repeat(11, 1fr);
+  -ms-grid-rows: (2.8rem)[12];
+      grid-template-rows: repeat(12, 2.8rem);
   margin: 3rem;
-  height: 100%;
+  max-height: 100%;
 }
 
 .logo {
-  -ms-grid-column: 5;
-      grid-column-start: 5;
-  grid-column-end: 7;
+  -ms-grid-column: 6;
+      grid-column-start: 6;
+  grid-column-end: 8;
   -ms-grid-row: 1;
       grid-row-start: 1;
   grid-row-end: 2;
@@ -75,18 +87,19 @@ header {
 }
 
 .header_text {
-  -ms-grid-column: 5;
-      grid-column-start: 5;
-  grid-column-end: 7;
-  -ms-grid-row: 5;
-      grid-row-start: 5;
-  grid-row-end: 7;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 11;
+  -ms-grid-row: 6;
+      grid-row-start: 6;
+  grid-row-end: 8;
   -ms-grid-column-align: center;
       justify-self: center;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   text-align: center;
+  z-index: 10;
 }
 
 .fien {
@@ -227,9 +240,9 @@ header {
 }
 
 .nicolas {
-  -ms-grid-column: 6;
-      grid-column-start: 6;
-  grid-column-end: 8;
+  -ms-grid-column: 7;
+      grid-column-start: 7;
+  grid-column-end: 9;
   -ms-grid-row: 3;
       grid-row-start: 3;
   grid-row-end: 4;
@@ -258,6 +271,210 @@ header {
   position: absolute;
   bottom: -2rem;
   left: -2rem;
+}
+
+.bailey {
+  -ms-grid-column: 9;
+      grid-column-start: 9;
+  grid-column-end: 10;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 3;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  position: relative;
+}
+
+.bailey img {
+  width: 10vw;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.bailey_2 {
+  position: absolute;
+  bottom: -1rem;
+  left: -1rem;
+}
+
+.bailey_3 {
+  position: absolute;
+  bottom: -2rem;
+  left: -2rem;
+}
+
+.stefan {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  -ms-grid-row: 9;
+      grid-row-start: 9;
+  grid-row-end: 11;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  position: relative;
+}
+
+.stefan img {
+  width: 10vw;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.stefan_2 {
+  position: absolute;
+  bottom: 1rem;
+  right: -1rem;
+}
+
+.stefan_3 {
+  position: absolute;
+  bottom: 2rem;
+  right: -2rem;
+}
+
+.nick {
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+  grid-column-end: 6;
+  -ms-grid-row: 10;
+      grid-row-start: 10;
+  grid-row-end: 12;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  position: relative;
+}
+
+.nick img {
+  width: 10vw;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.nick_2 {
+  position: absolute;
+  bottom: 1rem;
+  right: -1rem;
+}
+
+.nick_3 {
+  position: absolute;
+  bottom: 2rem;
+  right: -2rem;
+}
+
+.stephanie {
+  -ms-grid-column: 7;
+      grid-column-start: 7;
+  grid-column-end: 9;
+  -ms-grid-row: 11;
+      grid-row-start: 11;
+  grid-row-end: 12;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  position: relative;
+}
+
+.stephanie img {
+  width: 10vw;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.stephanie_2 {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.stephanie_3 {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.ilya {
+  -ms-grid-column: 9;
+      grid-column-start: 9;
+  grid-column-end: 11;
+  -ms-grid-row: 10;
+      grid-row-start: 10;
+  grid-row-end: 11;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  position: relative;
+}
+
+.ilya img {
+  width: 10vw;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.ilya_2 {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.ilya_3 {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.nathalie {
+  -ms-grid-column: 10;
+      grid-column-start: 10;
+  grid-column-end: 12;
+  -ms-grid-row: 9;
+      grid-row-start: 9;
+  grid-row-end: 10;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  position: relative;
+}
+
+.nathalie img {
+  width: 10vw;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.nathalie_2 {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.nathalie_3 {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
 }
 
 .sign_up {
