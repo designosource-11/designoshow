@@ -65,9 +65,10 @@ span {
   background-color: #FFEB40 !important;
   font-family: pixel;
   width: 100px;
-  height: 40px !important;
+  padding: 0.5rem 0.3rem;
   cursor: pointer;
   border: none;
+  text-transform: uppercase;
 }
 
 header {
@@ -671,6 +672,32 @@ header {
       align-self: center;
 }
 
+.sign_up form .select_dinos {
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+  width: 308px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #000000;
+}
+
+.sign_up form .select_dinos .description {
+  height: 50px;
+  background-color: #50C78D;
+  font-size: 20px;
+}
+
+.sign_up form .select_dinos .dinos {
+  width: 100%;
+}
+
+.sign_up form .select_dinos .dinos img {
+  width: 100px;
+  margin: 0;
+}
+
 .program {
   display: block;
   margin: 6rem 3rem;
@@ -772,30 +799,55 @@ header {
   font-weight: 500;
 }
 
-.sign_up form .select_dinos {
-  position: absolute;
-  bottom: 100px;
-  right: 100px;
-  width: 308px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  background-color: #000000;
+.blocks {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  margin: 10rem 3rem;
 }
 
-.sign_up form .select_dinos .description {
-  height: 50px;
-  background-color: #50C78D;
-  font-size: 20px;
+.blocks div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
-.sign_up form .select_dinos .dinos {
-  width: 100%;
+.blocks h2 {
+  font-size: 2rem;
 }
 
-.sign_up form .select_dinos .dinos img {
-  width: 100px;
-  margin: 0;
+.dresscode {
+  background-color: #191919;
+  padding: 3rem;
 }
-  
+
+.dresscode a {
+  text-decoration: none;
+  color: #FFEB40;
+  text-transform: uppercase;
+}
+
+.convinced {
+  background-color: #2489E7;
+  padding: 3rem;
+}
+
+.convinced .button {
+  color: #000000;
+  text-decoration: none;
+}
 /*# sourceMappingURL=styles.css.map */

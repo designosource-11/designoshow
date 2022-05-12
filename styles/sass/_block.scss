@@ -1,0 +1,41 @@
+.blocks{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 10rem 3rem;
+
+    div{        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+}
+
+.dresscode{
+    background-color: $bgOffGrey;
+    padding: 3rem;
+
+    a{
+        text-decoration: none;
+        color: $primaryYellow;
+        text-transform: uppercase;
+    }
+}
+
+.convinced{
+    background-color: $primaryBlue;
+    padding: 3rem;
+
+    .button{
+        color: $bgColor;
+        text-decoration: none;
+        // height: fit-content;
+        // padding: 0.3rem;
+    }
+}

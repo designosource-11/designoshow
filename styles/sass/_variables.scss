@@ -84,7 +84,9 @@ span{
     background-color: $primaryYellow !important;
     font-family: $secondaryFont;
     width: 100px;
-    height: 40px !important;
+    // height: 40px !important;
+    padding: 0.5rem 0.3rem;
     cursor: pointer;
     border: none;
+    text-transform: uppercase;
 }
