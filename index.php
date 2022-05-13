@@ -158,6 +158,11 @@
             <a href="#sign_up" class="button pixel">Sign up</a>
         </div>
     </div>
+    <footer>
+        <a href="https://www.designosource.be"><img src="./assets/logo-designosource-wit.svg" alt="Designosource logo"></a>
+        <img src="./assets/logo_dinoshow.svg" alt="logo dino show" class="dinoshow">
+        <a href="https://www.thomasmore.be"><img src="./assets/logo-thomas-more-university-college.png" alt="logo Thomas More"></a>
+    </footer>
     <script src="index.js"></script>
 </body>
 </html>
