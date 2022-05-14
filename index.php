@@ -117,12 +117,13 @@
                     <img src="./assets/insta/Bailey.jpg" alt="">
                     <img src="./assets/insta/Nathalie.jpg" alt="">
                 </div>
+                <p class="button pixel">Check</p>
             </div>
         </form>
     </div>
     <div class="program">
         <h2 class="bold">T-program Rex</h2>
-        <p>We would like to welcome y’all to a dinoshow so great and <br>formidable that even a comet can’t take it down.</p>
+        <p>We would like to welcome y&#39;all to a dinoshow so great and <br>formidable that even a comet can&#39;t take it down.</p>
         <div class="schedule">
             <div class="schedule_item schedule_item_1">
                 <p class="time pixel">18u30</p>

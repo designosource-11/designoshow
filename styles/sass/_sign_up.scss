@@ -104,16 +104,28 @@
 
         .select_dinos {
             position: absolute;
-            bottom: 100px;
-            right: 100px;
+            bottom: -110px;
+            right: -210px;
             width: 308px;
             height: fit-content;
             background-color: $bgColor;
 
             .description {
-                height: 50px;
+                box-sizing: border-box;
+                padding: 10px;
+                height: fit-content;
                 background-color: $primaryGreen;
                 font-size: 20px;
+                border-bottom: 3px solid $bgColor;
+
+                p {
+                    font-size: 20px;
+                }
+
+                p:nth-child(2) {
+                    font-size: 30px;
+                    font-family: $primaryFontBold;
+                }
             }
 
             .dinos {

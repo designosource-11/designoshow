@@ -68,6 +68,8 @@ span {
   height: 40px !important;
   cursor: pointer;
   border: none;
+  text-align: center;
+  position: relative;
 }
 
 header {
@@ -671,6 +673,47 @@ header {
       align-self: center;
 }
 
+.sign_up form .select_dinos {
+  position: absolute;
+  bottom: -110px;
+  right: -210px;
+  width: 308px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #000000;
+}
+
+.sign_up form .select_dinos .description {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #50C78D;
+  font-size: 20px;
+  border-bottom: 3px solid #000000;
+}
+
+.sign_up form .select_dinos .description p {
+  font-size: 20px;
+}
+
+.sign_up form .select_dinos .description p:nth-child(2) {
+  font-size: 30px;
+  font-family: telegraf-bold;
+}
+
+.sign_up form .select_dinos .dinos {
+  width: 100%;
+}
+
+.sign_up form .select_dinos .dinos img {
+  width: 100px;
+  margin: 0;
+}
+
 .program {
   display: block;
   margin: 6rem 3rem;
@@ -771,31 +814,4 @@ header {
 .schedule_item_4:hover .time {
   font-weight: 500;
 }
-
-.sign_up form .select_dinos {
-  position: absolute;
-  bottom: 100px;
-  right: 100px;
-  width: 308px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  background-color: #000000;
-}
-
-.sign_up form .select_dinos .description {
-  height: 50px;
-  background-color: #50C78D;
-  font-size: 20px;
-}
-
-.sign_up form .select_dinos .dinos {
-  width: 100%;
-}
-
-.sign_up form .select_dinos .dinos img {
-  width: 100px;
-  margin: 0;
-}
-  
 /*# sourceMappingURL=styles.css.map */
