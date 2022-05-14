@@ -139,3 +139,53 @@ document.querySelector(".schedule_item_4").addEventListener("mouseenter", ()=>{
 document.querySelector(".schedule_item_4").addEventListener("mouseleave", ()=>{
     document.querySelector(".schedule_item_4").style.padding = "0 3rem";
 });
+
+let blue = [
+    "./assets/team/teammember-1.jpg", 
+    "./assets/team/teammember-4.jpg", 
+    "./assets/team/teammember-8.jpg", 
+    "./assets/team/teammember-9.jpg"];
+
+let red = [
+    "./assets/team/teammember-2.jpg",
+    "./assets/team/teammember-7.jpg",
+    "./assets/team/teammember-10.jpg"];
+
+let green = [
+    "./assets/team/teammember-3.jpg",
+    "./assets/team/teammember-6.jpg",
+    "./assets/team/teammember-11.jpg",
+    "./assets/team/teammember-5.jpg"];
+
+function getlength(array){
+    let length = array.length;
+    return length;
+}
+
+function getRandomImage(array){
+    let length = getlength(array);
+    let num = Math.floor(Math.random() * length);
+    let img = array[num];
+    return img;
+}
+
+window.addEventListener("load", ()=>{
+    let one = getRandomImage(red);
+    let two = getRandomImage(blue);
+    let three = getRandomImage(green);
+
+    let dino1 = document.querySelectorAll(".dino1 img");
+    let dino2 = document.querySelectorAll(".dino2 img");
+    let dino3 = document.querySelectorAll(".dino3 img");
+    for(let i = 0; i < dino1.length; i++){
+        dino1[i].setAttribute("src", one);
+    }
+
+    for(let i = 0; i < dino2.length; i++){
+        dino2[i].setAttribute("src", two);   
+    }
+
+    for(let i = 0; i < dino3.length; i++){
+        dino3[i].setAttribute("src", three);   
+    }
+});

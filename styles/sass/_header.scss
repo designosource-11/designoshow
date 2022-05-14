@@ -516,8 +516,8 @@ header{
    .header_mobile{
        display: grid;
        grid-template-columns: repeat(6, 16%);
-       grid-template-rows: repeat(8, 1fr);
-       margin-bottom: -12rem;
+       grid-template-rows: repeat(8, 12.5vh);
+       margin-bottom: -10rem;
        justify-content: center;
        align-items: center;
    }
@@ -573,7 +573,8 @@ header{
         position: relative; 
 
         img{
-            width: 30vw;
+            max-width: 35vw;
+            max-height: 20vh;
         }
     }
 
@@ -606,7 +607,8 @@ header{
         position: relative;
 
         img{
-            width: 21vw;
+            max-width: 35vw;
+            max-height: 20vh;
         }
     }
 
@@ -634,7 +636,8 @@ header{
         position: relative;
 
         img{
-            width: 30vw;
+            max-width: 35vw;
+            max-height: 20vh;
         }
     }
 

@@ -674,9 +674,9 @@ header {
     display: grid;
     -ms-grid-columns: (16%)[6];
         grid-template-columns: repeat(6, 16%);
-    -ms-grid-rows: (1fr)[8];
-        grid-template-rows: repeat(8, 1fr);
-    margin-bottom: -12rem;
+    -ms-grid-rows: (12.5vh)[8];
+        grid-template-rows: repeat(8, 12.5vh);
+    margin-bottom: -10rem;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -745,7 +745,8 @@ header {
     position: relative;
   }
   .dino1 img {
-    width: 30vw;
+    max-width: 35vw;
+    max-height: 20vh;
   }
   .dino1_2 {
     position: absolute;
@@ -792,7 +793,8 @@ header {
     position: relative;
   }
   .dino2 img {
-    width: 21vw;
+    max-width: 35vw;
+    max-height: 20vh;
   }
   .dino2_2 {
     position: absolute;
@@ -823,7 +825,8 @@ header {
     position: relative;
   }
   .dino3 img {
-    width: 30vw;
+    max-width: 35vw;
+    max-height: 20vh;
   }
   .dino3_2 {
     position: absolute;

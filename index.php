@@ -94,19 +94,19 @@
                 <p>21 juni, 18u30 @Stadschouwburg, Mechelen</p>
             </div>
             <div class="dino1">
-                <img class="dino1_1" src="./assets/team/teammember-9.jpg">
-                <img class="dino1_2" src="./assets/team/teammember-9.jpg">
-                <img class="dino1_3" src="./assets/team/teammember-9.jpg">
+                <img class="dino1_1" src="">
+                <img class="dino1_2" src="">
+                <img class="dino1_3" src="">
             </div>
             <div class="dino2">
-                <img class="dino2_1" src="./assets/team/teammember-3.jpg">
-                <img class="dino2_2" src="./assets/team/teammember-3.jpg">
-                <img class="dino2_3" src="./assets/team/teammember-3.jpg">
+                <img class="dino2_1" src="">
+                <img class="dino2_2" src="">
+                <img class="dino2_3" src="">
             </div>
             <div class="dino3">
-                <img class="dino3_1" src="./assets/team/teammember-7.jpg">
-                <img class="dino3_2" src="./assets/team/teammember-7.jpg">
-                <img class="dino3_3" src="./assets/team/teammember-7.jpg">
+                <img class="dino3_1" src="">
+                <img class="dino3_2" src="">
+                <img class="dino3_3" src="">
             </div>
         </section>
         <section class="cta">        
