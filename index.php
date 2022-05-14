@@ -9,71 +9,110 @@
 </head>
 <body>
     <header>
-        <img class="logo" src="assets/logo-designosource-wit.svg" alt="logo">
-        <div class="header_text">
-            <h2 class="pixel">Get your <span>&#42;</span>ss over to</h2>
-            <h1 class="bold">The Dinoshow</h1>
-            <p>21 juni, 18u30 @Stadschouwburg, Mechelen</p>
-        </div>
-        <div class="fien">
-            <img class="fien_1" src="./assets/team/teammember-1.jpg">
-            <img class="fien_2 hidden" src="./assets/team/teammember-1.jpg">
-            <img class="fien_3 hidden" src="./assets/team/teammember-1.jpg">
-        </div>
-        <div class="sarah">
-            <img class="sarah_1" src="./assets/team/teammember-6.jpg">
-            <img class="sarah_2 hidden" src="./assets/team/teammember-6.jpg">
-            <img class="sarah_3 hidden" src="./assets/team/teammember-6.jpg">
-        </div>
-        <div class="brian">
-            <img class="brian_1" src="./assets/team/teammember-5.jpg">
-            <img class="brian_2 hidden" src="./assets/team/teammember-5.jpg">
-            <img class="brian_3 hidden" src="./assets/team/teammember-5.jpg">
-        </div>
-        <div class="nicolas">
-            <img class="nicolas_1" src="./assets/team/teammember-7.jpg">
-            <img class="nicolas_2 hidden" src="./assets/team/teammember-7.jpg">
-            <img class="nicolas_3 hidden" src="./assets/team/teammember-7.jpg">
-        </div>
-        <div class="bailey">
-            <img class="bailey_1" src="./assets/team/teammember-4.jpg">
-            <img class="bailey_2 hidden" src="./assets/team/teammember-4.jpg">
-            <img class="bailey_3 hidden" src="./assets/team/teammember-4.jpg">
-        </div>
-        <div class="bastien">
-            <img class="bastien_1" src="./assets/team/teammember-3.jpg">
-            <img class="bastien_2 hidden" src="./assets/team/teammember-3.jpg">
-            <img class="bastien_3 hidden" src="./assets/team/teammember-3.jpg">
-        </div>
-        <div class="stefan">
-            <img class="stefan_1" src="./assets/team/teammember-10.jpg">
-            <img class="stefan_2 hidden" src="./assets/team/teammember-10.jpg">
-            <img class="stefan_3 hidden" src="./assets/team/teammember-10.jpg">
-        </div>
-        <div class="nick">
-            <img class="nick_1" src="./assets/team/teammember-11.jpg">
-            <img class="nick_2 hidden" src="./assets/team/teammember-11.jpg">
-            <img class="nick_3 hidden" src="./assets/team/teammember-11.jpg">
-        </div>
-        <div class="stephanie">
-            <img class="stephanie_1" src="./assets/team/teammember-2.jpg">
-            <img class="stephanie_2 hidden" src="./assets/team/teammember-2.jpg">
-            <img class="stephanie_3 hidden" src="./assets/team/teammember-2.jpg">
-        </div>
-        <div class="ilya">
-            <img class="ilya_1" src="./assets/team/teammember-8.jpg">
-            <img class="ilya_2 hidden" src="./assets/team/teammember-8.jpg">
-            <img class="ilya_3 hidden" src="./assets/team/teammember-8.jpg">
-        </div>
-        <div class="nathalie">
-            <img class="nathalie_1" src="./assets/team/teammember-9.jpg">
-            <img class="nathalie_2 hidden" src="./assets/team/teammember-9.jpg">
-            <img class="nathalie_3 hidden" src="./assets/team/teammember-9.jpg">
-        </div>
-    </header>
-    <section class="cta">        
-        <p class="pixel"><span class="pixel">v</span> Sign up <span class="pixel">v</span></p>
-    </section>
+        <section class="header">
+            <lottie-player
+                    id="logo-lottie"
+                    src="assets/logoAnimation.json"
+                    speed="1"
+                    class="logo"
+                    loop
+                    autoplay
+            ></lottie-player>
+            <div class="header_text">
+                <h2 class="pixel">Get your <span>&#42;</span>ss over to</h2>
+                <h1 class="bold">The Dinoshow</h1>
+                <p>21 juni, 18u30 @Stadschouwburg, Mechelen</p>
+            </div>
+            <div class="fien">
+                <img class="fien_1" src="./assets/team/teammember-1.jpg">
+                <img class="fien_2 hidden" src="./assets/team/teammember-1.jpg">
+                <img class="fien_3 hidden" src="./assets/team/teammember-1.jpg">
+            </div>
+            <div class="sarah">
+                <img class="sarah_1" src="./assets/team/teammember-6.jpg">
+                <img class="sarah_2 hidden" src="./assets/team/teammember-6.jpg">
+                <img class="sarah_3 hidden" src="./assets/team/teammember-6.jpg">
+            </div>
+            <div class="brian">
+                <img class="brian_1" src="./assets/team/teammember-5.jpg">
+                <img class="brian_2 hidden" src="./assets/team/teammember-5.jpg">
+                <img class="brian_3 hidden" src="./assets/team/teammember-5.jpg">
+            </div>
+            <div class="nicolas">
+                <img class="nicolas_1" src="./assets/team/teammember-7.jpg">
+                <img class="nicolas_2 hidden" src="./assets/team/teammember-7.jpg">
+                <img class="nicolas_3 hidden" src="./assets/team/teammember-7.jpg">
+            </div>
+            <div class="bailey">
+                <img class="bailey_1" src="./assets/team/teammember-4.jpg">
+                <img class="bailey_2 hidden" src="./assets/team/teammember-4.jpg">
+                <img class="bailey_3 hidden" src="./assets/team/teammember-4.jpg">
+            </div>
+            <div class="bastien">
+                <img class="bastien_1" src="./assets/team/teammember-3.jpg">
+                <img class="bastien_2 hidden" src="./assets/team/teammember-3.jpg">
+                <img class="bastien_3 hidden" src="./assets/team/teammember-3.jpg">
+            </div>
+            <div class="stefan">
+                <img class="stefan_1" src="./assets/team/teammember-10.jpg">
+                <img class="stefan_2 hidden" src="./assets/team/teammember-10.jpg">
+                <img class="stefan_3 hidden" src="./assets/team/teammember-10.jpg">
+            </div>
+            <div class="nick">
+                <img class="nick_1" src="./assets/team/teammember-11.jpg">
+                <img class="nick_2 hidden" src="./assets/team/teammember-11.jpg">
+                <img class="nick_3 hidden" src="./assets/team/teammember-11.jpg">
+            </div>
+            <div class="stephanie">
+                <img class="stephanie_1" src="./assets/team/teammember-2.jpg">
+                <img class="stephanie_2 hidden" src="./assets/team/teammember-2.jpg">
+                <img class="stephanie_3 hidden" src="./assets/team/teammember-2.jpg">
+            </div>
+            <div class="ilya">
+                <img class="ilya_1" src="./assets/team/teammember-8.jpg">
+                <img class="ilya_2 hidden" src="./assets/team/teammember-8.jpg">
+                <img class="ilya_3 hidden" src="./assets/team/teammember-8.jpg">
+            </div>
+            <div class="nathalie">
+                <img class="nathalie_1" src="./assets/team/teammember-9.jpg">
+                <img class="nathalie_2 hidden" src="./assets/team/teammember-9.jpg">
+                <img class="nathalie_3 hidden" src="./assets/team/teammember-9.jpg">
+            </div>
+        </section>
+        <section class="header_mobile">
+            <lottie-player
+                    id="logo-lottie"
+                    src="assets/logoAnimation.json"
+                    speed="1"
+                    class="logo"
+                    loop
+                    autoplay
+            ></lottie-player>
+            <div class="header_text">
+                <h2 class="pixel">Get your <span>&#42;</span>ss over to</h2>
+                <h1 class="bold">The Dinoshow</h1>
+                <p>21 juni, 18u30 @Stadschouwburg, Mechelen</p>
+            </div>
+            <div class="dino1">
+                <img class="dino1_1" src="./assets/team/teammember-9.jpg">
+                <img class="dino1_2" src="./assets/team/teammember-9.jpg">
+                <img class="dino1_3" src="./assets/team/teammember-9.jpg">
+            </div>
+            <div class="dino2">
+                <img class="dino2_1" src="./assets/team/teammember-3.jpg">
+                <img class="dino2_2" src="./assets/team/teammember-3.jpg">
+                <img class="dino2_3" src="./assets/team/teammember-3.jpg">
+            </div>
+            <div class="dino3">
+                <img class="dino3_1" src="./assets/team/teammember-7.jpg">
+                <img class="dino3_2" src="./assets/team/teammember-7.jpg">
+                <img class="dino3_3" src="./assets/team/teammember-7.jpg">
+            </div>
+        </section>
+        <section class="cta">        
+            <p class="pixel"><span class="pixel">v</span> Sign up <span class="pixel">v</span></p>
+        </section>
+    </header>   
     <div class="sign_up" id="sign_up">
         <h2 class="bold">Signosaurus up</h2>
         <p>Be there or be rectangular.</p>
@@ -163,6 +202,8 @@
         <img src="./assets/logo_dinoshow.svg" alt="logo dino show" class="dinoshow">
         <a href="https://www.thomasmore.be"><img src="./assets/logo-thomas-more-university-college.png" alt="logo Thomas More"></a>
     </footer>
-    <script src="index.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
 </body>
 </html>

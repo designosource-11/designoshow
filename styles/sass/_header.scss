@@ -1,14 +1,24 @@
 header{
-    display: grid;
-    grid-template-columns: repeat(11, 9%);
-    grid-template-rows: repeat(11, 2.8rem);
-    margin: 3rem 3rem 0 3rem;
-    padding: 3rem 3rem 0 3rem;
+    margin: 3rem 3rem 15rem 3rem;
+    padding: 2rem 0 0 0;
     max-height: 100%;
 }
 
+.header{
+    display: grid;
+    grid-template-columns: repeat(11, 7.7%);
+    grid-template-rows: repeat(11, 3.8%);
+    column-gap: 1.5%;
+    row-gap: 5%;
+    margin-bottom: -5rem;
+}
+
+.header_mobile{
+    display: none;
+}
+
 .logo{
-    grid-column-start: 6;
+    grid-column-start: 5;
     grid-column-end: 8;
     grid-row-start: 1;
     grid-row-end: 2;
@@ -17,15 +27,37 @@ header{
     z-index: 10;
 }
 
+#logo-lottie {
+    // width: 15vw;
+    height: 12vh;
+    // object-fit: cover;
+}
+
 .header_text{
     grid-column-start: 3;
-    grid-column-end: 11;
+    grid-column-end: 10;
     grid-row-start: 5;
     grid-row-end: 9;
     justify-content: center;
     align-self: center;
     text-align: center;
     z-index: 20;
+
+    h1{
+        font-size: 8rem;
+        text-transform: uppercase;
+        margin: -0.1rem;
+    }
+    
+    h2 {
+        font-size: 3rem;
+        text-transform: uppercase;
+        margin: -0.1rem;
+    }
+    
+    p {
+        font-size: 3rem;
+    }
 }
 
 .fien{
@@ -343,7 +375,6 @@ header{
     align-items: center;
     color: $primaryYellow;    
     text-transform: uppercase;
-    margin-bottom: 8rem;
     animation: updown 2s ease-in-out 0s infinite alternate;
 
     span{
@@ -357,4 +388,267 @@ header{
     from {transform:translateY(0);}
     to {transform:translateY(1rem);}
     
+}
+
+ @media (max-width: 1920px) and (min-width: 1400px){
+    .header{
+        grid-template-columns: repeat(11, 7.7%);
+        grid-template-rows: repeat(11, 2.6%);
+        column-gap: 1.5%;
+        row-gap: 4.5%;
+        margin-bottom: -20rem;
+    }
+
+    .fien, .bailey, .stephanie, .brian, .nick, .nicolas,
+    .ilya, .sarah, .nathalie, .bastien, .stefan{
+        img{
+            width: 10vw;
+        }
+    }
+
+    .header_text{
+        h1{
+            font-size: 5rem;
+            text-transform: uppercase;
+            margin: -0.1rem;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            text-transform: uppercase;
+            margin: -0.1rem;
+        }
+        
+        p {
+            font-size: 1.3rem;
+        }
+    }
+ }
+
+ @media (max-width: 1400px) and (min-width: 800px){
+     header{
+         margin: 0;
+     }
+
+    .header{
+        grid-template-columns: repeat(11, 7.7%);
+        grid-template-rows: repeat(11, 5%);
+        column-gap: 1.5%;
+        row-gap: 2.5%;
+        margin-bottom: -10rem;
+    }
+
+    .fien, .bailey, .stephanie, .brian, .nick, .nicolas,
+    .ilya, .sarah, .nathalie, .bastien, .stefan{
+        img{
+            width: 9vw;
+        }
+    }
+
+    .header_text{
+        h1{
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            margin: -0.1rem;
+        }
+        
+        h2 {
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            margin: -0.1rem;
+        }
+        
+        p {
+            font-size: 1rem;
+        }
+   }
+ }
+
+ @media (max-width: 800px) and (min-width: 600px){
+    header{
+        margin: 0;
+    }
+
+   .header{
+       grid-template-columns: repeat(11, 7.7%);
+       grid-template-rows: repeat(11, 4.8%);
+       column-gap: 1.5%;
+       row-gap: 1.5%;
+       margin-bottom: -10rem;
+   }
+
+   .fien, .bailey, .stephanie, .brian, .nick, .nicolas,
+   .ilya, .sarah, .nathalie, .bastien, .stefan{
+       img{
+           width: 8vw;
+       }
+   }
+
+   .header_text{
+        h1{
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            margin: -0.1rem;
+        }
+        
+        h2 {
+            font-size: 1rem;
+            text-transform: uppercase;
+            margin: -0.1rem;
+        }
+        
+        p {
+            font-size: 0.8rem;
+        }
+   }
+}
+
+@media (max-width: 600px){
+    header{
+        margin: 0 0 8rem 0;
+        padding: 0;
+    }
+
+   .header{
+        display: none;
+   }
+
+   .header_mobile{
+       display: grid;
+       grid-template-columns: repeat(6, 16%);
+       grid-template-rows: repeat(8, 1fr);
+       margin-bottom: -12rem;
+       justify-content: center;
+       align-items: center;
+   }
+
+   .logo{
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        justify-self: center;
+        align-self: center;
+        z-index: 10;
+    }
+
+    #logo-lottie {
+        height: 10vh;
+    }
+
+    .header_text{
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 4;
+        grid-row-end: 6;
+        justify-content: center;
+        align-self: center;
+        text-align: center;
+        z-index: 20;
+
+        h1{
+            font-size: 2rem;
+            text-transform: uppercase;
+            margin: -0.1rem;
+        }
+        
+        h2 {
+            font-size: 1rem;
+            text-transform: uppercase;
+            margin: -0.1rem;
+        }
+        
+        p {
+            font-size: 0.8rem;
+        }
+    }
+
+   .dino1{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 6;
+        grid-row-end: 7;
+        justify-self: center;
+        align-self: center;
+        position: relative; 
+
+        img{
+            width: 30vw;
+        }
+    }
+
+    .dino1_2{
+        position: absolute;
+        bottom: 1rem;
+        right: -1rem;
+        animation: images 2.3s ease-in-out 0s infinite alternate;
+    }
+
+    .dino1_3{
+        position: absolute;
+        bottom: 2rem;
+        right: -2rem;
+        animation: images 2.3s ease-in-out 0s infinite alternate;
+    }
+
+    @keyframes images{
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+
+    .dino2{
+        grid-column-start: 4;
+        grid-column-end: 6;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        justify-self: center;
+        align-self: center;
+        position: relative;
+
+        img{
+            width: 21vw;
+        }
+    }
+
+    .dino2_2{
+        position: absolute;
+        bottom: -1rem;
+        right: 1rem;
+        animation: images 3s ease-in-out 0s infinite alternate;
+    }
+
+    .dino2_3{
+        position: absolute;
+        bottom: -2rem;
+        right: 2rem;
+        animation: images 3s ease-in-out 0s infinite alternate;
+    }
+
+    .dino3{
+        grid-column-start: 5;
+        grid-column-end: 7;
+        grid-row-start: 6;
+        grid-row-end: 9;
+        justify-self: center;
+        align-self: center;
+        position: relative;
+
+        img{
+            width: 30vw;
+        }
+    }
+
+    .dino3_2{
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        animation: images 2s ease-in-out 0s infinite alternate;
+    }
+
+    .dino3_3{
+        position: absolute;
+        bottom: 2rem;
+        right: 2rem;
+        animation: images 2s ease-in-out 0s infinite alternate;
+    }
 }

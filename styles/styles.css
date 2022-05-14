@@ -72,20 +72,31 @@ span {
 }
 
 header {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (9%)[11];
-      grid-template-columns: repeat(11, 9%);
-  -ms-grid-rows: (2.8rem)[11];
-      grid-template-rows: repeat(11, 2.8rem);
-  margin: 3rem 3rem 0 3rem;
-  padding: 3rem 3rem 0 3rem;
+  margin: 3rem 3rem 15rem 3rem;
+  padding: 2rem 0 0 0;
   max-height: 100%;
 }
 
+.header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (7.7%)[11];
+      grid-template-columns: repeat(11, 7.7%);
+  -ms-grid-rows: (3.8%)[11];
+      grid-template-rows: repeat(11, 3.8%);
+  -webkit-column-gap: 1.5%;
+          column-gap: 1.5%;
+  row-gap: 5%;
+  margin-bottom: -5rem;
+}
+
+.header_mobile {
+  display: none;
+}
+
 .logo {
-  -ms-grid-column: 6;
-      grid-column-start: 6;
+  -ms-grid-column: 5;
+      grid-column-start: 5;
   grid-column-end: 8;
   -ms-grid-row: 1;
       grid-row-start: 1;
@@ -98,10 +109,14 @@ header {
   z-index: 10;
 }
 
+#logo-lottie {
+  height: 12vh;
+}
+
 .header_text {
   -ms-grid-column: 3;
       grid-column-start: 3;
-  grid-column-end: 11;
+  grid-column-end: 10;
   -ms-grid-row: 5;
       grid-row-start: 5;
   grid-row-end: 9;
@@ -113,6 +128,22 @@ header {
       align-self: center;
   text-align: center;
   z-index: 20;
+}
+
+.header_text h1 {
+  font-size: 8rem;
+  text-transform: uppercase;
+  margin: -0.1rem;
+}
+
+.header_text h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin: -0.1rem;
+}
+
+.header_text p {
+  font-size: 3rem;
 }
 
 .fien {
@@ -502,7 +533,6 @@ header {
           align-items: center;
   color: #FFEB40;
   text-transform: uppercase;
-  margin-bottom: 8rem;
   -webkit-animation: updown 2s ease-in-out 0s infinite alternate;
           animation: updown 2s ease-in-out 0s infinite alternate;
 }
@@ -532,6 +562,282 @@ header {
   to {
     -webkit-transform: translateY(1rem);
             transform: translateY(1rem);
+  }
+}
+
+@media (max-width: 1920px) and (min-width: 1400px) {
+  .header {
+    -ms-grid-columns: (7.7%)[11];
+        grid-template-columns: repeat(11, 7.7%);
+    -ms-grid-rows: (2.6%)[11];
+        grid-template-rows: repeat(11, 2.6%);
+    -webkit-column-gap: 1.5%;
+            column-gap: 1.5%;
+    row-gap: 4.5%;
+    margin-bottom: -20rem;
+  }
+  .fien img, .bailey img, .stephanie img, .brian img, .nick img, .nicolas img,
+  .ilya img, .sarah img, .nathalie img, .bastien img, .stefan img {
+    width: 10vw;
+  }
+  .header_text h1 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    margin: -0.1rem;
+  }
+  .header_text h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: -0.1rem;
+  }
+  .header_text p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 1400px) and (min-width: 800px) {
+  header {
+    margin: 0;
+  }
+  .header {
+    -ms-grid-columns: (7.7%)[11];
+        grid-template-columns: repeat(11, 7.7%);
+    -ms-grid-rows: (5%)[11];
+        grid-template-rows: repeat(11, 5%);
+    -webkit-column-gap: 1.5%;
+            column-gap: 1.5%;
+    row-gap: 2.5%;
+    margin-bottom: -10rem;
+  }
+  .fien img, .bailey img, .stephanie img, .brian img, .nick img, .nicolas img,
+  .ilya img, .sarah img, .nathalie img, .bastien img, .stefan img {
+    width: 9vw;
+  }
+  .header_text h1 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    margin: -0.1rem;
+  }
+  .header_text h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin: -0.1rem;
+  }
+  .header_text p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 800px) and (min-width: 600px) {
+  header {
+    margin: 0;
+  }
+  .header {
+    -ms-grid-columns: (7.7%)[11];
+        grid-template-columns: repeat(11, 7.7%);
+    -ms-grid-rows: (4.8%)[11];
+        grid-template-rows: repeat(11, 4.8%);
+    -webkit-column-gap: 1.5%;
+            column-gap: 1.5%;
+    row-gap: 1.5%;
+    margin-bottom: -10rem;
+  }
+  .fien img, .bailey img, .stephanie img, .brian img, .nick img, .nicolas img,
+  .ilya img, .sarah img, .nathalie img, .bastien img, .stefan img {
+    width: 8vw;
+  }
+  .header_text h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: -0.1rem;
+  }
+  .header_text h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin: -0.1rem;
+  }
+  .header_text p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    margin: 0 0 8rem 0;
+    padding: 0;
+  }
+  .header {
+    display: none;
+  }
+  .header_mobile {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (16%)[6];
+        grid-template-columns: repeat(6, 16%);
+    -ms-grid-rows: (1fr)[8];
+        grid-template-rows: repeat(8, 1fr);
+    margin-bottom: -12rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .logo {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 7;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 2;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    z-index: 10;
+  }
+  #logo-lottie {
+    height: 10vh;
+  }
+  .header_text {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 7;
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+    grid-row-end: 6;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    text-align: center;
+    z-index: 20;
+  }
+  .header_text h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: -0.1rem;
+  }
+  .header_text h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin: -0.1rem;
+  }
+  .header_text p {
+    font-size: 0.8rem;
+  }
+  .dino1 {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 2;
+    -ms-grid-row: 6;
+        grid-row-start: 6;
+    grid-row-end: 7;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    position: relative;
+  }
+  .dino1 img {
+    width: 30vw;
+  }
+  .dino1_2 {
+    position: absolute;
+    bottom: 1rem;
+    right: -1rem;
+    -webkit-animation: images 2.3s ease-in-out 0s infinite alternate;
+            animation: images 2.3s ease-in-out 0s infinite alternate;
+  }
+  .dino1_3 {
+    position: absolute;
+    bottom: 2rem;
+    right: -2rem;
+    -webkit-animation: images 2.3s ease-in-out 0s infinite alternate;
+            animation: images 2.3s ease-in-out 0s infinite alternate;
+  }
+  @-webkit-keyframes images {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes images {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .dino2 {
+    -ms-grid-column: 4;
+        grid-column-start: 4;
+    grid-column-end: 6;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 3;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    position: relative;
+  }
+  .dino2 img {
+    width: 21vw;
+  }
+  .dino2_2 {
+    position: absolute;
+    bottom: -1rem;
+    right: 1rem;
+    -webkit-animation: images 3s ease-in-out 0s infinite alternate;
+            animation: images 3s ease-in-out 0s infinite alternate;
+  }
+  .dino2_3 {
+    position: absolute;
+    bottom: -2rem;
+    right: 2rem;
+    -webkit-animation: images 3s ease-in-out 0s infinite alternate;
+            animation: images 3s ease-in-out 0s infinite alternate;
+  }
+  .dino3 {
+    -ms-grid-column: 5;
+        grid-column-start: 5;
+    grid-column-end: 7;
+    -ms-grid-row: 6;
+        grid-row-start: 6;
+    grid-row-end: 9;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    position: relative;
+  }
+  .dino3 img {
+    width: 30vw;
+  }
+  .dino3_2 {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    -webkit-animation: images 2s ease-in-out 0s infinite alternate;
+            animation: images 2s ease-in-out 0s infinite alternate;
+  }
+  .dino3_3 {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    -webkit-animation: images 2s ease-in-out 0s infinite alternate;
+            animation: images 2s ease-in-out 0s infinite alternate;
   }
 }
 
