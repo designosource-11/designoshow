@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 3rem;
 
     h2 {
         margin-bottom: 15px;
@@ -78,6 +79,10 @@
                     top: -100000px;
                     left: -1000000px;
                 }
+
+                img {
+                    display: none;
+                }
             }
 
             .raawrcaptcha_icon {
@@ -103,6 +108,7 @@
         }
 
         .select_dinos {
+            display: none;
             position: absolute;
             bottom: -110px;
             right: -210px;
@@ -131,11 +137,64 @@
             .dinos {
                 width: 100%;
 
-                img {
+                .raawr_dino {
+                    position: relative;
                     width: 100px;
+                    height: 100px;
                     margin: 0;
                 }
+
+                .overlay {
+                    opacity: 0.3;
+                }
             }
+        }
+    }
+}
+
+@media only screen and (max-width: 1400px){
+    .sign_up {
+        form {
+            width: 50%;
+        }
+
+        .select_dinos {
+            bottom: -110px !important;
+            right: -170px !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .sign_up {
+        form {
+            width: 60%;
+        }
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .sign_up {
+        form {
+            width: 70%;
+        }
+
+        .select_dinos {
+            bottom: -110px !important;
+            right: -100px !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .sign_up {
+        form {
+            width: 100%;
+        }
+        
+        .select_dinos {
+            bottom: 0 !important;
+            right: 0 !important;
         }
     }
 }

@@ -189,3 +189,31 @@ window.addEventListener("load", ()=>{
         dino3[i].setAttribute("src", three);   
     }
 });
+
+let raawrcaptcha = document.querySelector(".raawrcaptcha");
+let checkbox = document.querySelector(".raawrcaptcha .checkbox_replace img");
+let select_dinos = document.querySelector(".select_dinos");
+let dinos = document.querySelector(".dinos");
+let check = document.querySelector(".select_dinos .button");
+
+raawrcaptcha.addEventListener('click', function(e) {
+    if(checkbox.style.display != "block") {
+        select_dinos.style.display = "block"
+    }
+}, false);
+
+dinos.addEventListener('click', function(e) {
+    e = e || window.event;
+    let target = e.target;
+    if(!target.classList.contains("overlay") && !target.classList.contains("dinos")) {
+        target.classList.add("overlay");
+    } else if(!target.classList.contains("dinos")){
+        target.classList.remove("overlay") ;
+    }
+}, false);
+
+
+check.addEventListener('click', function(e) {
+    select_dinos.style.display = "none"
+    checkbox.style.display = "block"
+}, false);
