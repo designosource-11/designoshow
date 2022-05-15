@@ -65,10 +65,9 @@ span {
   background-color: #FFEB40 !important;
   font-family: pixel;
   width: 100px;
-  padding: 0.5rem 0.3rem;
+  height: 40px !important;
   cursor: pointer;
   border: none;
-  text-transform: uppercase;
   text-align: center;
   position: relative;
 }
@@ -857,6 +856,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0 3rem;
 }
 
 .sign_up h2 {
@@ -957,6 +957,10 @@ header {
   left: -1000000px;
 }
 
+.sign_up form .raawrcaptcha .checkbox_replace img {
+  display: none;
+}
+
 .sign_up form .raawrcaptcha .raawrcaptcha_icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -987,6 +991,7 @@ header {
 }
 
 .sign_up form .select_dinos {
+  display: none;
   position: absolute;
   bottom: -110px;
   right: -210px;
@@ -998,9 +1003,6 @@ header {
 }
 
 .sign_up form .select_dinos .description {
-  height: 50px;
-  background-color: #50C78D;
-  font-size: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 10px;
@@ -1025,9 +1027,51 @@ header {
   width: 100%;
 }
 
-.sign_up form .select_dinos .dinos img {
+.sign_up form .select_dinos .dinos .raawr_dino {
+  position: relative;
   width: 100px;
+  height: 100px;
   margin: 0;
+}
+
+.sign_up form .select_dinos .dinos .overlay {
+  opacity: 0.3;
+}
+
+@media only screen and (max-width: 1400px) {
+  .sign_up form {
+    width: 50%;
+  }
+  .sign_up .select_dinos {
+    bottom: -110px !important;
+    right: -170px !important;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .sign_up form {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .sign_up form {
+    width: 70%;
+  }
+  .sign_up .select_dinos {
+    bottom: -110px !important;
+    right: -100px !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .sign_up form {
+    width: 100%;
+  }
+  .sign_up .select_dinos {
+    bottom: 0 !important;
+    right: 0 !important;
+  }
 }
 
 .program {
