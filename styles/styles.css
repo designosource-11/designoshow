@@ -263,6 +263,7 @@ header {
       -ms-grid-row-align: center;
       align-self: center;
   position: relative;
+  z-index: 21;
 }
 
 .brian img {
@@ -365,6 +366,7 @@ header {
       -ms-grid-row-align: center;
       align-self: center;
   position: relative;
+  z-index: 9;
 }
 
 .stefan img {
@@ -399,6 +401,7 @@ header {
       -ms-grid-row-align: center;
       align-self: center;
   position: relative;
+  z-index: 8;
 }
 
 .nick img {
@@ -433,6 +436,7 @@ header {
       -ms-grid-row-align: center;
       align-self: center;
   position: relative;
+  z-index: 7;
 }
 
 .stephanie img {
@@ -467,6 +471,7 @@ header {
       -ms-grid-row-align: center;
       align-self: center;
   position: relative;
+  z-index: 6;
 }
 
 .ilya img {
@@ -536,6 +541,7 @@ header {
   text-transform: uppercase;
   -webkit-animation: updown 2s ease-in-out 0s infinite alternate;
           animation: updown 2s ease-in-out 0s infinite alternate;
+  z-index: -5;
 }
 
 .cta span {
