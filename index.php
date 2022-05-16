@@ -7,8 +7,7 @@
             $updates = $_POST['updates'];
         } else {
             $updates = "off";
-        }   
-        var_dump($_POST);
+        }
 
         $conn = new mysqli("localhost", "root", "root", "dinoshow");
         $guests = $conn->query("insert into guests (first_name, last_name, email, updates) values ('".$conn->real_escape_string($first_name)."', '".$conn->real_escape_string($last_name)."', '".$conn->real_escape_string($email)."', '".$conn->real_escape_string($updates)."')");
