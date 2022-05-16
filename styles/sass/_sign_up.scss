@@ -46,8 +46,12 @@
                 .checkbox {
                     visibility: hidden;
                     position: absolute;
-                    top: -100000px;
-                    left: -1000000px;
+                    top: -30px;
+                    left: -30px;
+                }
+
+                img {
+                    display: none;
                 }
             }
 

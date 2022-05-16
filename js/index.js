@@ -190,6 +190,20 @@ window.addEventListener("load", ()=>{
     }
 });
 
+let updates = document.querySelector(".checkbox_replace");
+let updates_checkbox = document.querySelector(".checkbox_replace .checkbox");
+let updates_checkmark = document.querySelector(".checkbox_replace img");
+
+updates.addEventListener('click', function(e) {
+    if(updates_checkmark.style.display != "block") {
+        updates_checkmark.style.display = "block"
+        updates_checkbox.checked = true;
+    } else {
+        updates_checkmark.style.display = "none"
+        updates_checkbox.checked = false;
+    }
+}, false);
+
 let raawrcaptcha = document.querySelector(".raawrcaptcha");
 let checkbox = document.querySelector(".raawrcaptcha .checkbox_replace img");
 let select_dinos = document.querySelector(".select_dinos");

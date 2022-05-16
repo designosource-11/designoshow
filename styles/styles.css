@@ -916,8 +916,12 @@ header {
 .sign_up form .agree .checkbox_replace .checkbox {
   visibility: hidden;
   position: absolute;
-  top: -100000px;
-  left: -1000000px;
+  top: -30px;
+  left: -30px;
+}
+
+.sign_up form .agree .checkbox_replace img {
+  display: none;
 }
 
 .sign_up form .agree p {

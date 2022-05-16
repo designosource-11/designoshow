@@ -1,3 +1,19 @@
+<?php
+    if(!empty($_POST)) {
+        $first_name = $_POST['first_name'];
+        $last_name = $_POST['last_name'];
+        $email = $_POST['email'];
+        if(!empty($_POST['updates'])) {
+            $updates = $_POST['updates'];
+        } else {
+            $updates = "off";
+        }   
+        var_dump($_POST);
+
+        $conn = new mysqli("localhost", "root", "root", "dinoshow");
+        $guests = $conn->query("insert into guests (first_name, last_name, email, updates) values ('".$conn->real_escape_string($first_name)."', '".$conn->real_escape_string($last_name)."', '".$conn->real_escape_string($email)."', '".$conn->real_escape_string($updates)."')");
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -118,20 +134,20 @@
             <h2 class="bold">Signosaurus up</h2>
             <p>Be there or be rectangular.</p>
             <p>Sign up for dino&#39;s performing live on stage.</p>
-            <form action="" method="POST">
-                <input placeholder="First name" type="text" name="first_name" id="">
-                <input placeholder="Last name" type="text" name="last_name" id="">
-                <input placeholder="E-mail" type="text" name="email" id="">
+            <form action="index.php" method="POST">
+                <input placeholder="First name" type="text" name="first_name">
+                <input placeholder="Last name" type="text" name="last_name">
+                <input placeholder="E-mail" type="text" name="email">
                 <div class="agree">
                     <div class="checkbox_replace">
-                        <input class="checkbox" type="checkbox" name="" id="">
+                        <input class="checkbox" type="checkbox" name="updates" unchecked>
                         <img src="./assets/checkmark.svg" alt="">
                     </div>
                     <p>I agree to getting updates on this event by mail</p>
                 </div>
                 <div class="raawrcaptcha">
                     <div class="checkbox_replace">
-                        <input class="checkbox" type="checkbox" name="" id="">
+                        <input class="checkbox" type="checkbox" name="">
                         <img src="./assets/checkmark.svg" alt="">
                     </div>
                     <p>I'm not a dino</p>
@@ -140,7 +156,7 @@
                         <p>raawrcaptcha</p>
                     </div>
                 </div>
-                <button class="button" type="submit" name="submit">Sign up</button>
+                <input class="button" type="submit" value="Sign up" name="submit">
                 <div class="select_dinos">
                     <div class="description">
                         <p>Select all images with</p>
