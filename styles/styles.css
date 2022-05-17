@@ -1059,6 +1059,23 @@ header {
   opacity: 0.3;
 }
 
+.sign_up .message {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 30%;
+  padding: 20px 25px;
+  margin: 30px 0;
+  border: 2px solid #fff;
+}
+
+.sign_up .error {
+  border-color: #E8422C;
+}
+
+.sign_up .success {
+  border-color: #50C78D;
+}
+
 @media only screen and (max-width: 1400px) {
   .sign_up form {
     width: 50%;
@@ -1067,10 +1084,16 @@ header {
     bottom: -110px !important;
     right: -170px !important;
   }
+  .sign_up .message {
+    width: 50%;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
   .sign_up form {
+    width: 60%;
+  }
+  .sign_up .message {
     width: 60%;
   }
 }
@@ -1083,6 +1106,9 @@ header {
     bottom: -110px !important;
     right: -100px !important;
   }
+  .sign_up .message {
+    width: 70%;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -1092,6 +1118,9 @@ header {
   .sign_up .select_dinos {
     bottom: 0 !important;
     right: 0 !important;
+  }
+  .sign_up .message {
+    width: 100%;
   }
 }
 

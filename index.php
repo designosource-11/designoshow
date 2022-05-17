@@ -6,15 +6,16 @@
         if (!empty($_POST['updates'])) {
             $conn = new mysqli("localhost", "root", "root", "dinoshow");
             $guests = $conn->query("insert into guests (first_name, last_name, email, updates) values ('".$conn->real_escape_string($first_name)."', '".$conn->real_escape_string($last_name)."', '".$conn->real_escape_string($email)."', '".$conn->real_escape_string(1)."')");
-            $success = "Woop Woop! You are signed up for the show. Keep an eye on your mailbox for updates.";
+            $success = "<p class='message success'>Woop Woop! You are signed up for the show. Keep an eye on your mailbox for updates.</p>";
             session_start();
             $_SESSION["message"] = $success;
         }
-    } else{
-        $error = "Aargh, something went wrong... Send a mail to info@designosource.be";
-        session_start();
-        $_SESSION["message"] = $error;
-    }
+        else{
+            $error = "<p class='message error'>Aargh, something went wrong... Send a mail to info@designosource.be</p>";
+            session_start();
+            $_SESSION["message"] = $error;
+        }
+    } 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -23,6 +24,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/png" href="./assets/favicon.png">
     <title>Dinoshow 2022</title>
 </head>
 <body>
@@ -136,6 +138,9 @@
             <h2 class="bold">Signosaurus up</h2>
             <p>Be there or be rectangular.</p>
             <p>Sign up for dino&#39;s performing live on stage.</p>
+            <?php if(!empty($_SESSION["message"])): ?>
+                <?php echo $_SESSION["message"] ;?>
+            <?php endif; ?>
             <form action="#sign_up" method="POST">
                 <input placeholder="First name" type="text" name="first_name">
                 <input placeholder="Last name" type="text" name="last_name">
@@ -152,7 +157,7 @@
                         <input class="checkbox" type="checkbox" name="raawr">
                         <img src="./assets/checkmark.svg" alt="">
                     </div>
-                    <p>I'm not a dino</p>
+                    <p>I&#39;m not a dino</p>
                     <div class="raawrcaptcha_icon">
                         <img src="assets/raawrcaptcha.svg" alt="">
                         <p>raawrcaptcha</p>
@@ -178,11 +183,6 @@
                     <p class="button pixel">Check</p>
                 </div>
             </form>
-            <?php if(isset($_SESSION["message"])): ?>
-            <div>
-                <?php echo $_SESSION["message"] ;?>
-            </div>
-            <?php endif; ?>
         </div>
         <div class="program">
             <h2 class="bold">T-program Rex</h2>
@@ -201,7 +201,7 @@
                 <div class="schedule_item schedule_item_3">
                     <p class="time pixel">21.00h</p>
                     <p class="description regular">Einde show & start receptie</p>
-                    <p class="extra regular">Exclusive meet and greet with the dino’s</p>
+                    <p class="extra regular">Exclusive meet and greet with the dino&#39;s</p>
                 </div>
                 <div class="schedule_item schedule_item_4">
                     <p class="time pixel">22.30h</p>
@@ -218,7 +218,7 @@
             </div>
             <div class="convinced">
                 <h2 class="bold">Convinced now?</h2>
-                <p>Then act up like a velociraptor and get your ass to the signup page. You don’t want to miss this!</p>
+                <p>Then act up like a velociraptor and get your ass to the signup page. You don&#39;t want to miss this!</p>
                 <a href="#sign_up" class="button pixel">Sign up</a>
             </div>
         </div>
