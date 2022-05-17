@@ -3,14 +3,10 @@
         $first_name = $_POST['first_name'];
         $last_name = $_POST['last_name'];
         $email = $_POST['email'];
-        if(!empty($_POST['updates'])) {
-            $updates = $_POST['updates'];
-        } else {
-            $updates = "off";
+        if (!empty($_POST['updates'])) {
+            $conn = new mysqli("localhost", "root", "root", "dinoshow");
+            $guests = $conn->query("insert into guests (first_name, last_name, email, updates) values ('".$conn->real_escape_string($first_name)."', '".$conn->real_escape_string($last_name)."', '".$conn->real_escape_string($email)."', '".$conn->real_escape_string(1)."')");
         }
-
-        $conn = new mysqli("localhost", "root", "root", "dinoshow");
-        $guests = $conn->query("insert into guests (first_name, last_name, email, updates) values ('".$conn->real_escape_string($first_name)."', '".$conn->real_escape_string($last_name)."', '".$conn->real_escape_string($email)."', '".$conn->real_escape_string($updates)."')");
     }
 ?>
 <!DOCTYPE html>
@@ -20,7 +16,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
-    <title>Designoshow 2022</title>
+    <title>Dinoshow 2022</title>
 </head>
 <body>
     <!-- <div class="container"> -->
@@ -37,7 +33,7 @@
                 <div class="header_text">
                     <h2 class="pixel">Get your <span>&#42;</span>ss over to</h2>
                     <h1 class="bold">The Dinoshow</h1>
-                    <p>21 juni, 18u30 @Stadschouwburg, Mechelen</p>
+                    <p>21st of June, 18.30h @Stadschouwburg, Mechelen</p>
                 </div>
                 <div class="fien">
                     <img class="fien_1" src="./assets/team/teammember-1.jpg">
@@ -107,7 +103,7 @@
                 <div class="header_text">
                     <h2 class="pixel">Get your <span>&#42;</span>ss over to</h2>
                     <h1 class="bold">The Dinoshow</h1>
-                    <p>21 juni, 18u30 @Stadschouwburg, Mechelen</p>
+                    <p>21st of June, 18.30h @Stadschouwburg, Mechelen</p>
                 </div>
                 <div class="dino1">
                     <img class="dino1_1" src="">
@@ -146,7 +142,7 @@
                 </div>
                 <div class="raawrcaptcha">
                     <div class="checkbox_replace">
-                        <input class="checkbox" type="checkbox" name="">
+                        <input class="checkbox" type="checkbox" name="raawr">
                         <img src="./assets/checkmark.svg" alt="">
                     </div>
                     <p>I'm not a dino</p>
@@ -181,22 +177,22 @@
             <p>We would like to welcome y&#39;all to a dinoshow so great and <br>formidable that even an asteroid can&#39;t take it down.</p>
             <div class="schedule">
                 <div class="schedule_item schedule_item_1">
-                    <p class="time pixel">18u30</p>
+                    <p class="time pixel">18.30h</p>
                     <p class="description regular">Doors open @Stadschouwburg, Mechelen</p>
                     <p class="extra regular">It&#39;ll be safe from the asteroids, we promise</p>
                 </div>
                 <div class="schedule_item schedule_item_2">
-                    <p class="time pixel">19u00</p>
+                    <p class="time pixel">19.00h</p>
                     <p class="description regular">Start Dinoshow</p>
                     <p class="extra regular">No raaaawrs during the show ok?</p>
                 </div>
                 <div class="schedule_item schedule_item_3">
-                    <p class="time pixel">21u00</p>
+                    <p class="time pixel">21.00h</p>
                     <p class="description regular">Einde show & start receptie</p>
                     <p class="extra regular">Exclusive meet and greet with the dino’s</p>
                 </div>
                 <div class="schedule_item schedule_item_4">
-                    <p class="time pixel">22u30</p>
+                    <p class="time pixel">22.30h</p>
                     <p class="description regular">Einde</p>
                     <p class="extra regular">Go ahead, on to your own caves now will ya?</p>
                 </div>
