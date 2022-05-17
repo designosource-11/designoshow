@@ -86,12 +86,21 @@ span{
 }
 
 .button {
-    background-color: $primaryYellow !important;
+    background-color: $primaryYellow;
     font-family: $secondaryFont;
+    color: $txtColorDark;
     width: 100px;
-    height: 40px !important;
+    padding: 0.5rem 0.3rem;
     cursor: pointer;
     border: none;
+    text-transform: uppercase;
     text-align: center;
     position: relative;
+    text-decoration: none;
+    font-size: 1rem;
+
+    &:hover{
+        background-color: $txtColorDark;
+        color: $primaryYellow;
+    }
 }

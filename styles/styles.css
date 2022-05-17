@@ -62,14 +62,23 @@ span {
 }
 
 .button {
-  background-color: #FFEB40 !important;
+  background-color: #FFEB40;
   font-family: pixel;
+  color: #000000;
   width: 100px;
-  height: 40px !important;
+  padding: 0.5rem 0.3rem;
   cursor: pointer;
   border: none;
+  text-transform: uppercase;
   text-align: center;
   position: relative;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.button:hover {
+  background-color: #000000;
+  color: #FFEB40;
 }
 
 header {
@@ -542,6 +551,7 @@ header {
   -webkit-animation: updown 2s ease-in-out 0s infinite alternate;
           animation: updown 2s ease-in-out 0s infinite alternate;
   z-index: -5;
+  text-decoration: none;
 }
 
 .cta span {
@@ -604,7 +614,7 @@ header {
 
 @media (max-width: 1400px) and (min-width: 800px) {
   header {
-    margin: 0;
+    margin: 0 0 8rem 0;
   }
   .header {
     -ms-grid-columns: (7.7%)[11];
@@ -637,7 +647,7 @@ header {
 
 @media (max-width: 800px) and (min-width: 600px) {
   header {
-    margin: 0;
+    margin: 0 0 8rem 0;
   }
   .header {
     -ms-grid-columns: (7.7%)[11];
@@ -922,8 +932,8 @@ header {
 .sign_up form .agree .checkbox_replace .checkbox {
   visibility: hidden;
   position: absolute;
-  top: -30px;
-  left: -30px;
+  top: -10000px;
+  left: -10000px;
 }
 
 .sign_up form .agree .checkbox_replace img {
@@ -998,6 +1008,7 @@ header {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  width: 120px;
 }
 
 .sign_up form .select_dinos {
@@ -1256,13 +1267,12 @@ header {
   text-transform: uppercase;
 }
 
-.convinced {
-  background-color: #2489E7;
+.dresscode a:hover {
+  color: #2489E7;
 }
 
-.convinced .button {
-  color: #000000;
-  text-decoration: none;
+.convinced {
+  background-color: #2489E7;
 }
 
 @media (max-width: 800px) and (min-width: 640px) {

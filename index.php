@@ -126,7 +126,7 @@
                 </div>
             </section>
             <section class="cta">        
-                <p class="pixel"><span class="pixel">v</span> Sign up <span class="pixel">v</span></p>
+                <a href="#sign_up" class="pixel cta"><span class="pixel">v</span> Sign up <span class="pixel">v</span></a>
             </section>
         </header>   
         <div class="sign_up" id="sign_up">
@@ -155,7 +155,7 @@
                         <p>raawrcaptcha</p>
                     </div>
                 </div>
-                <input class="button" type="submit" value="Sign up" name="submit">
+                <button class="button" type="submit" name="submit">Sign up</button>
                 <div class="select_dinos">
                     <div class="description">
                         <p>Select all images with</p>
@@ -178,27 +178,27 @@
         </div>
         <div class="program">
             <h2 class="bold">T-program Rex</h2>
-            <p>We would like to welcome y&#39;all to a dinoshow so great and <br>formidable that even a comet can&#39;t take it down.</p>
+            <p>We would like to welcome y&#39;all to a dinoshow so great and <br>formidable that even an asteroid can&#39;t take it down.</p>
             <div class="schedule">
                 <div class="schedule_item schedule_item_1">
                     <p class="time pixel">18u30</p>
                     <p class="description regular">Doors open @Stadschouwburg, Mechelen</p>
-                    <p class="extra regular">Something dumb</p>
+                    <p class="extra regular">It&#39;ll be safe from the asteroids, we promise</p>
                 </div>
                 <div class="schedule_item schedule_item_2">
                     <p class="time pixel">19u00</p>
                     <p class="description regular">Start Dinoshow</p>
-                    <p class="extra regular">Some funny text</p>
+                    <p class="extra regular">No raaaawrs during the show ok?</p>
                 </div>
                 <div class="schedule_item schedule_item_3">
                     <p class="time pixel">21u00</p>
                     <p class="description regular">Einde show & start receptie</p>
-                    <p class="extra regular">More funny text</p>
+                    <p class="extra regular">Exclusive meet and greet with the dino’s</p>
                 </div>
                 <div class="schedule_item schedule_item_4">
                     <p class="time pixel">22u30</p>
                     <p class="description regular">Einde</p>
-                    <p class="extra regular">Ya you get it</p>
+                    <p class="extra regular">Go ahead, on to your own caves now will ya?</p>
                 </div>
             </div>
         </div>
@@ -210,7 +210,7 @@
             </div>
             <div class="convinced">
                 <h2 class="bold">Convinced now?</h2>
-                <p>Some dumb text Some dumb</p>
+                <p>Then act up like a velociraptor and get your ass to the signup page. You don’t want to miss this!</p>
                 <a href="#sign_up" class="button pixel">Sign up</a>
             </div>
         </div>

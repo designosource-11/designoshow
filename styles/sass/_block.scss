@@ -25,18 +25,15 @@
         text-decoration: none;
         color: $primaryYellow;
         text-transform: uppercase;
+
+        &:hover{
+            color: $primaryBlue;
+        }
     }
 }
 
 .convinced{
     background-color: $primaryBlue;
-
-    .button{
-        color: $bgColor;
-        text-decoration: none;
-        // height: fit-content;
-        // padding: 0.3rem;
-    }
 }
 
 @media (max-width: 800px) and (min-width: 640px) { 
