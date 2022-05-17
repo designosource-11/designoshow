@@ -6,7 +6,14 @@
         if (!empty($_POST['updates'])) {
             $conn = new mysqli("localhost", "root", "root", "dinoshow");
             $guests = $conn->query("insert into guests (first_name, last_name, email, updates) values ('".$conn->real_escape_string($first_name)."', '".$conn->real_escape_string($last_name)."', '".$conn->real_escape_string($email)."', '".$conn->real_escape_string(1)."')");
+            $success = "Woop Woop! You are signed up for the show. Keep an eye on your mailbox for updates.";
+            session_start();
+            $_SESSION["message"] = $success;
         }
+    } else{
+        $error = "Aargh, something went wrong... Send a mail to info@designosource.be";
+        session_start();
+        $_SESSION["message"] = $error;
     }
 ?>
 <!DOCTYPE html>
@@ -129,7 +136,7 @@
             <h2 class="bold">Signosaurus up</h2>
             <p>Be there or be rectangular.</p>
             <p>Sign up for dino&#39;s performing live on stage.</p>
-            <form action="index.php" method="POST">
+            <form action="#sign_up" method="POST">
                 <input placeholder="First name" type="text" name="first_name">
                 <input placeholder="Last name" type="text" name="last_name">
                 <input placeholder="E-mail" type="text" name="email">
@@ -171,6 +178,11 @@
                     <p class="button pixel">Check</p>
                 </div>
             </form>
+            <?php if(isset($_SESSION["message"])): ?>
+            <div>
+                <?php echo $_SESSION["message"] ;?>
+            </div>
+            <?php endif; ?>
         </div>
         <div class="program">
             <h2 class="bold">T-program Rex</h2>
