@@ -7,10 +7,10 @@ header{
 .header{
     display: grid;
     grid-template-columns: repeat(11, 7.7%);
-    grid-template-rows: repeat(11, 3.8%);
+    grid-template-rows: repeat(11, 5.1vh); //
     column-gap: 1.5%;
     row-gap: 5%;
-    margin-bottom: -5rem;
+    margin-bottom: 10rem;
 }
 
 .header_mobile{
@@ -383,6 +383,7 @@ header{
     animation: updown 2s ease-in-out 0s infinite alternate;
     z-index: -5;
     text-decoration: none;
+    margin-top: 10rem;
 
     span{
         font-size: 0.6rem;
@@ -400,10 +401,9 @@ header{
  @media (max-width: 1920px) and (min-width: 1400px){
     .header{
         grid-template-columns: repeat(11, 7.7%);
-        grid-template-rows: repeat(11, 2.6%);
+        grid-template-rows: repeat(11, 5.3vh);
         column-gap: 1.5%;
         row-gap: 4.5%;
-        margin-bottom: -20rem;
     }
 
     .fien, .bailey, .stephanie, .brian, .nick, .nicolas,
@@ -439,10 +439,9 @@ header{
 
     .header{
         grid-template-columns: repeat(11, 7.7%);
-        grid-template-rows: repeat(11, 5%);
+        grid-template-rows: repeat(11, 6.4vh);
         column-gap: 1.5%;
         row-gap: 2.5%;
-        margin-bottom: -10rem;
     }
 
     .fien, .bailey, .stephanie, .brian, .nick, .nicolas,
@@ -450,6 +449,10 @@ header{
         img{
             width: 9vw;
         }
+    }
+
+    .cta{        
+        margin-top: -3rem;
     }
 
     .header_text{
@@ -478,10 +481,9 @@ header{
 
    .header{
        grid-template-columns: repeat(11, 7.7%);
-       grid-template-rows: repeat(11, 4.8%);
+       grid-template-rows: repeat(11, 7vh);
        column-gap: 1.5%;
        row-gap: 1.5%;
-       margin-bottom: -10rem;
    }
 
    .fien, .bailey, .stephanie, .brian, .nick, .nicolas,
@@ -490,6 +492,10 @@ header{
            width: 8vw;
        }
    }
+
+    .cta{        
+        margin-top: 1rem;
+    }
 
    .header_text{
         h1{
@@ -660,5 +666,9 @@ header{
         bottom: 2rem;
         right: 2rem;
         animation: images 2s ease-in-out 0s infinite alternate;
+    }
+
+    .cta{        
+        margin-top: -1rem;
     }
 }
