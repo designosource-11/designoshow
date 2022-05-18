@@ -21,6 +21,10 @@
 }
 
 /* General variables */
+* {
+  cursor: url("../assets/cursor/cursor-default.svg") -1 0, auto;
+}
+
 body {
   background-color: #000000;
   color: #FFFFFF;
@@ -69,7 +73,6 @@ span {
   color: #000000;
   width: 100px;
   padding: 0.5rem 0.3rem;
-  cursor: pointer;
   border: none;
   text-transform: uppercase;
   text-align: center;
@@ -81,6 +84,23 @@ span {
 .button:hover {
   background-color: #000000;
   color: #FFEB40;
+  cursor: url("../assets/cursor/cursor-hover.svg"), auto;
+}
+
+.button:active {
+  cursor: url("../assets/cursor/cursor-click.svg"), auto;
+}
+
+a:hover {
+  cursor: url("../assets/cursor/cursor-hover.svg"), auto;
+}
+
+*:active {
+  cursor: url("../assets/cursor/cursor-click.svg"), auto;
+}
+
+a:active {
+  cursor: url("../assets/cursor/cursor-click.svg"), auto;
 }
 
 header {

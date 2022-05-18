@@ -40,6 +40,10 @@ $secondaryFont: pixel;
 $mxBodyDesktop: 5rem;
 $mxBodyMobile: 1rem;
 
+* {
+    cursor: url("../assets/cursor/cursor-default.svg") -1 0, auto;
+}
+
 body{
     background-color: $bgColor;
     color: $txtColor;
@@ -93,7 +97,6 @@ span{
     color: $txtColorDark;
     width: 100px;
     padding: 0.5rem 0.3rem;
-    cursor: pointer;
     border: none;
     text-transform: uppercase;
     text-align: center;
@@ -104,5 +107,21 @@ span{
     &:hover{
         background-color: $txtColorDark;
         color: $primaryYellow;
+        cursor: url("../assets/cursor/cursor-hover.svg"), auto;
     }
+
+    &:active{
+        cursor: url("../assets/cursor/cursor-click.svg"), auto;
+    }
+}
+
+a:hover {
+    cursor: url("../assets/cursor/cursor-hover.svg"), auto;
+}
+
+*:active{
+    cursor: url("../assets/cursor/cursor-click.svg"), auto;
+}
+a:active{
+    cursor: url("../assets/cursor/cursor-click.svg"), auto;
 }
