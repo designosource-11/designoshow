@@ -28,11 +28,13 @@ body {
 }
 
 .bold {
-  font-family: telegraf-bold;
+  font-family: Telegraf;
 }
 
 .pixel {
   font-family: pixel;
+  font-smooth: never;
+  -webkit-font-smoothing: none;
 }
 
 h1 {

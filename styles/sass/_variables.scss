@@ -52,11 +52,13 @@ body{
 // }
 
 .bold {
-    font-family: $primaryFontBold;
+    font-family: $primaryFont;
 }
 
 .pixel {
     font-family: $secondaryFont;
+    font-smooth: never;
+    -webkit-font-smoothing: none;
 }
 
 h1{

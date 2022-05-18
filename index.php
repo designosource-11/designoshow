@@ -4,7 +4,7 @@
         $last_name = $_POST['last_name'];
         $email = $_POST['email'];
         if (!empty($_POST['updates'])) {
-            $conn = new mysqli("localhost", "root", "root", "dinoshow");
+            $conn = new mysqli("localhost", "root", "", "dinoshow");
             $guests = $conn->query("insert into guests (first_name, last_name, email, updates) values ('".$conn->real_escape_string($first_name)."', '".$conn->real_escape_string($last_name)."', '".$conn->real_escape_string($email)."', '".$conn->real_escape_string(1)."')");
             $success = "<p class='message success'>Woop Woop! You are signed up for the show. Keep an eye on your mailbox for updates.</p>";
             session_start();
@@ -42,7 +42,7 @@
                 <div class="header_text">
                     <h2 class="pixel">Get your <span>&#42;</span>ss over to</h2>
                     <h1 class="bold">The Dinoshow</h1>
-                    <p>21st of June, 18.30h @Stadschouwburg, Mechelen</p>
+                    <p>21st of June, 18.30h @Stadsschouwburg, Mechelen</p>
                 </div>
                 <div class="fien">
                     <img class="fien_1" src="./assets/team/teammember-1.jpg">
@@ -112,7 +112,7 @@
                 <div class="header_text">
                     <h2 class="pixel">Get your <span>&#42;</span>ss over to</h2>
                     <h1 class="bold">The Dinoshow</h1>
-                    <p>21st of June, 18.30h @Stadschouwburg, Mechelen</p>
+                    <p>21st of June, 18.30h @Stadsschouwburg, Mechelen</p>
                 </div>
                 <div class="dino1">
                     <img class="dino1_1" src="">
@@ -190,7 +190,7 @@
             <div class="schedule">
                 <div class="schedule_item schedule_item_1">
                     <p class="time pixel">18.30h</p>
-                    <p class="description regular">Doors open @Stadschouwburg, Mechelen</p>
+                    <p class="description regular">Doors open @Stadsschouwburg, Mechelen</p>
                     <p class="extra regular">It&#39;ll be safe from the asteroids, we promise</p>
                 </div>
                 <div class="schedule_item schedule_item_2">
@@ -223,9 +223,9 @@
             </div>
         </div>
         <footer>
-            <a href="https://www.designosource.be"><img src="./assets/logo-designosource-wit.svg" alt="Designosource logo"></a>
+            <a href="https://www.designosource.be" target="_blank"><img src="./assets/logo-designosource-wit.svg" alt="Designosource logo"></a>
             <img src="./assets/logo_dinoshow.svg" alt="logo dino show" class="dinoshow">
-            <a href="https://www.thomasmore.be"><img src="./assets/logo-thomas-more-university-college.png" alt="logo Thomas More"></a>
+            <a href="https://www.thomasmore.be" target="_blank"><img src="./assets/logo-thomas-more-university-college.png" alt="logo Thomas More"></a>
         </footer>
     <!-- </div> -->
     <script src="./js/index.js"></script>
