@@ -1392,4 +1392,21 @@ footer .dinoshow {
     width: 8rem;
   }
 }
+
+@media (max-width: 600px) {
+  footer {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    margin: -5rem 15vw 5rem 15vw;
+  }
+  footer img {
+    max-width: 4rem;
+  }
+  footer .dinoshow {
+    max-width: 8rem;
+    width: 8rem;
+  }
+}
 /*# sourceMappingURL=styles.css.map */

@@ -214,7 +214,7 @@
             <div class="dresscode">
                 <h2 class="bold">A dresscode, rlly?</h2>
                 <p>Old school red carpet chique with a touch of crazy. Win a prize with the best outfit</p>
-                <a class="pixel" href="#">View outfit moodboard</a>
+                <a class="pixel" href="https://www.pinterest.com/fiengerardi/dresscode-x-designoshow/">View outfit moodboard</a>
             </div>
             <div class="convinced">
                 <h2 class="bold">Convinced now?</h2>
