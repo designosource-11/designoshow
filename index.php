@@ -3,7 +3,7 @@
         $first_name = $_POST['first_name'];
         $last_name = $_POST['last_name'];
         $email = $_POST['email'];
-        if (!empty($_POST['updates'])) {
+        if (!empty($_POST['updates']) && !empty($first_name) && !empty($last_name) && !empty($email)) {
             $conn = new mysqli("localhost", "root", "", "dinoshow");
             $guests = $conn->query("insert into guests (first_name, last_name, email, updates) values ('".$conn->real_escape_string($first_name)."', '".$conn->real_escape_string($last_name)."', '".$conn->real_escape_string($email)."', '".$conn->real_escape_string(1)."')");
             $success = "<p class='message success'>Woop Woop! You are signed up for the show. Keep an eye on your mailbox for updates.</p>";
@@ -214,7 +214,7 @@
             <div class="dresscode">
                 <h2 class="bold">A dresscode, rlly?</h2>
                 <p>Old school red carpet chique with a touch of crazy. Win a prize with the best outfit</p>
-                <a class="pixel" href="#">View outfit moodboard</a>
+                <a class="pixel" href="https://www.pinterest.com/fiengerardi/dresscode-x-designoshow/" target="_blank">View outfit moodboard</a>
             </div>
             <div class="convinced">
                 <h2 class="bold">Convinced now?</h2>
