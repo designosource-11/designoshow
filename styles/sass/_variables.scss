@@ -106,9 +106,13 @@ span{
     font-size: 1rem;
 
     &:hover{
-        background-color: $txtColorDark;
-        color: $primaryYellow;
         cursor: url("../assets/cursor/cursor-hover.svg"), auto;
+        background-color: $primaryYellow;
+        position: relative;
+        top: -1px;
+        left: -1px;
+        -webkit-box-shadow: 3px 3px 0px 1px $primaryYellow;
+        box-shadow: 3px 3px 0px 1px $primaryYellow;
     }
 
     &:active{

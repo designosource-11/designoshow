@@ -28,6 +28,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" type="image/png" href="./assets/favicon.png">
+
+    <!-- Cookie consent -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
     <title>Dinoshow 2022</title>
 </head>
 <body>
@@ -230,7 +234,53 @@
             <img src="./assets/logo_dinoshow.svg" alt="logo dino show" class="dinoshow">
             <a href="https://www.thomasmore.be" target="_blank"><img src="./assets/logo-thomas-more-university-college.png" alt="logo Thomas More"></a>
         </footer>
-    <!-- </div> -->
+
+    <!-- Cookie consent -->
+    <script src="./js/GTM.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+        window.cookieconsent.initialise({
+            "palette": {
+                "popup": {
+                    "background": "#2489E7"
+                },
+                "button": {
+                    "background": "#f1d600"
+                }
+            },
+            "position": "bottom-right",
+            "type": "opt-in",
+            "content": {
+                "message": "RAWR! We too use cookies!",
+                "dismiss": "Got it!",
+                "allow": "Accept",
+                "link": "Learn more",
+                "href": "https://designosource.be/cookiepolicy"
+            },
+            onStatusChange: function (status) {
+                var type = this.options.type;
+                var didConsent = this.hasConsented();
+                if (didConsent) {
+                    initGTM(window, document, 'script', 'dataLayer', 'GTM-MLRF65L');
+                }
+                if (!didConsent) {
+                    stopGTM();
+                }
+            },
+            onInitialise: function (status) {
+                var type = this.options.type;
+                var didConsent = this.hasConsented();
+                if (didConsent) {
+                    initGTM(window, document, 'script', 'dataLayer', 'GTM-MLRF65L');
+                }
+                if (!didConsent) {
+                    stopGTM();
+                }
+            },
+        });
+    </script>
+    <!-- END Cookie consent -->
+
     <script src="./js/index.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>

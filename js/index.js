@@ -109,7 +109,7 @@ document.querySelector(".stefan").addEventListener("mouseleave", ()=>{
 });
 
 if(window.innerWidth > 800){
-    console.log(window.innerWidth);
+    // console.log(window.innerWidth);
     document.querySelector(".schedule_item_1").addEventListener("mouseenter", ()=>{
         document.querySelector(".schedule_item_1").style.padding = "0.25rem 3rem";    
     });

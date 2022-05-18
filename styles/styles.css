@@ -83,9 +83,13 @@ span {
 }
 
 .button:hover {
-  background-color: #000000;
-  color: #FFEB40;
   cursor: url("../assets/cursor/cursor-hover.svg"), auto;
+  background-color: #FFEB40;
+  position: relative;
+  top: -1px;
+  left: -1px;
+  -webkit-box-shadow: 3px 3px 0px 1px #FFEB40;
+  box-shadow: 3px 3px 0px 1px #FFEB40;
 }
 
 .button:active {
@@ -1420,5 +1424,73 @@ footer .dinoshow {
     max-width: 8rem;
     width: 8rem;
   }
+}
+
+.policy {
+  margin: 0 20vw;
+}
+
+.policy div {
+  margin: 3rem 0;
+}
+
+.policy a {
+  color: #FFEB40;
+}
+
+.policy a:hover {
+  color: #2489E7;
+}
+
+.policy p {
+  line-height: 1.5rem;
+}
+
+.dinologo {
+  margin: 2.5rem 0;
+}
+
+.dinologo img {
+  display: block;
+  margin: auto;
+}
+
+.policy_h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem 0 0 0;
+}
+
+.policy_summary p {
+  margin: 2rem 0;
+}
+
+.policy_table {
+  border-bottom: 2px solid #FFFFFF;
+  padding-bottom: 1rem;
+}
+
+.policy_table ol {
+  line-height: 1.5rem;
+}
+
+.policy_detail ol > li {
+  margin-top: 3rem;
+}
+
+.policy_detail p {
+  margin: 2rem 0;
+}
+
+.policy_detail ul {
+  margin-top: -1rem;
+}
+
+.policy_detail_adress li {
+  list-style: none;
 }
 /*# sourceMappingURL=styles.css.map */
