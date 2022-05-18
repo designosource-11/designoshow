@@ -4,7 +4,8 @@
         $last_name = $_POST['last_name'];
         $email = $_POST['email'];
         if (!empty($_POST['updates']) && !empty($first_name) && !empty($last_name) && !empty($email)) {
-            $conn = new mysqli("localhost", "root", "root", "dinoshow");
+            // $conn = new mysqli("localhost", "root", "root", "dinoshow");
+            $conn = new mysqli("ID130716_designoshow.db.webhosting.be", "ID130716_designoshow", "XGgr%QBkqEj5", "ID130716_designoshow");
             $guests = $conn->query("insert into guests (first_name, last_name, email, updates) values ('".$conn->real_escape_string($first_name)."', '".$conn->real_escape_string($last_name)."', '".$conn->real_escape_string($email)."', '".$conn->real_escape_string(1)."')");
             $success = "<p class='message success'>Woop Woop! You are signed up for the show. Keep an eye on your mailbox for updates.</p>";
             session_start();
@@ -171,6 +172,7 @@
                     </div>
                 </div>
                 <button class="button" type="submit" name="submit">Sign up</button>
+                <a href="privacypolicy.html" class="policy">Privacy policy</a>
                 <div class="select_dinos">
                     <div class="description">
                         <p>Select all images with</p>

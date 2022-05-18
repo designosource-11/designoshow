@@ -115,6 +115,13 @@
             font-weight: normal;
         }
 
+        .policy {
+            display: inline-block;
+            width: fit-content;
+            color: $txtColor;
+            margin: 30px auto 0 auto;
+        }
+
         .select_dinos {
             display: none;
             position: absolute;
