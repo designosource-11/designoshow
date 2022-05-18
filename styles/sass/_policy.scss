@@ -1,0 +1,70 @@
+.policy{
+    margin: 0 20vw;
+
+    div{
+        margin: 3rem 0;
+    }
+
+    a{
+        color: $primaryYellow;
+
+        &:hover{
+            color: $primaryBlue;
+        }
+    }
+
+    p{
+        line-height: 1.5rem;
+    }
+}
+
+.dinologo{
+    margin: 2.5rem 0;
+
+    img{
+        display: block;
+        margin: auto;  
+    }    
+}
+
+.policy_h1{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0 0 0; 
+}
+
+.policy_summary{
+    p{
+        margin: 2rem 0;
+    }
+}
+
+.policy_table{
+    border-bottom: 2px solid $txtColor;
+    padding-bottom: 1rem;
+
+    ol{
+        line-height: 1.5rem;
+    }
+}
+
+.policy_detail{
+
+    ol > li{
+        margin-top: 3rem;
+    }
+
+    p{
+        margin: 2rem 0;
+    }
+
+    ul{
+        margin-top: -1rem;
+    }
+}
+
+.policy_detail_adress{
+    li{
+        list-style: none;
+    }
+}
