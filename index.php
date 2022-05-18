@@ -171,6 +171,7 @@
                     </div>
                 </div>
                 <button class="button" type="submit" name="submit">Sign up</button>
+                <a href="privacypolicy.html" class="policy">Privacy policy</a>
                 <div class="select_dinos">
                     <div class="description">
                         <p>Select all images with</p>

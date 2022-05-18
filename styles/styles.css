@@ -1041,6 +1041,15 @@ header {
   font-weight: normal;
 }
 
+.sign_up form .policy {
+  display: inline-block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #FFFFFF;
+  margin: 30px auto 0 auto;
+}
+
 .sign_up form .select_dinos {
   display: none;
   position: absolute;
@@ -1492,5 +1501,17 @@ footer .dinoshow {
 
 .policy_detail_adress li {
   list-style: none;
+}
+
+@media only screen and (max-width: 900px) {
+  .policy {
+    margin: 0 10vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .policy {
+    margin: 0 5vw;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
