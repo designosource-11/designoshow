@@ -8,7 +8,8 @@
         "sass/_sign_up.scss",
         "sass/_program.scss",
         "sass/_block.scss",
-        "sass/_footer.scss"
+        "sass/_footer.scss",
+        "sass/_policy.scss"
     ],
     "names": [],
     "file": "styles.css"
