@@ -23,6 +23,7 @@
 /* General variables */
 * {
   cursor: url("../assets/cursor/cursor-default.svg") -1 0, auto;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -888,6 +889,7 @@ header {
 }
 
 .sign_up {
+  scroll-margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -898,7 +900,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 3rem;
+  margin: 10rem 3rem;
 }
 
 .sign_up h2 {
@@ -925,6 +927,7 @@ header {
 }
 
 .sign_up form input {
+  font-family: Telegraf;
   height: 50px;
   margin: 15px 0;
   background-color: #191919;
@@ -951,7 +954,7 @@ header {
 .sign_up form .agree .checkbox_replace {
   width: 30px;
   height: 30px;
-  margin: 0;
+  margin: 0 24px 0 0;
   border: 2px solid #FFFFFF;
 }
 
@@ -967,7 +970,7 @@ header {
 }
 
 .sign_up form .agree p {
-  width: 80%;
+  width: 100%;
 }
 
 .sign_up form .raawrcaptcha {
@@ -1035,6 +1038,7 @@ header {
       -ms-grid-row-align: center;
       align-self: center;
   width: 120px;
+  font-weight: normal;
 }
 
 .sign_up form .select_dinos {
@@ -1066,7 +1070,8 @@ header {
 
 .sign_up form .select_dinos .description p:nth-child(2) {
   font-size: 30px;
-  font-family: telegraf-bold;
+  font-family: Telegraf;
+  font-weight: bold;
 }
 
 .sign_up form .select_dinos .dinos {
@@ -1143,6 +1148,13 @@ header {
 @media only screen and (max-width: 600px) {
   .sign_up form {
     width: 100%;
+  }
+  .sign_up form .select_dinos {
+    width: 263px;
+  }
+  .sign_up form .select_dinos .dinos .raawr_dino {
+    width: 85px;
+    height: 85px;
   }
   .sign_up .message {
     width: 100%;
