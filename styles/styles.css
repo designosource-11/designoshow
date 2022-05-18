@@ -1060,7 +1060,7 @@ header {
 .sign_up form .select_dinos {
   display: none;
   position: absolute;
-  bottom: -110px;
+  bottom: 80px;
   right: -210px;
   width: 308px;
   height: -webkit-fit-content;
@@ -1128,7 +1128,7 @@ header {
     width: 50%;
   }
   .sign_up .select_dinos {
-    bottom: -110px !important;
+    bottom: 80px !important;
     right: -170px !important;
   }
   .sign_up .message {
