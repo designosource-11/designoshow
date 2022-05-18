@@ -1179,7 +1179,7 @@ header {
 
 .program {
   display: block;
-  margin: 6rem 3rem;
+  padding: 10vh 5vw;
 }
 
 .program h2 {
