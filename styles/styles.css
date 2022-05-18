@@ -82,9 +82,13 @@ span {
 }
 
 .button:hover {
-  background-color: #000000;
-  color: #FFEB40;
   cursor: url("../assets/cursor/cursor-hover.svg"), auto;
+  background-color: #FFEB40;
+  position: relative;
+  top: -1px;
+  left: -1px;
+  -webkit-box-shadow: 3px 3px 0px 1px #FFEB40;
+  box-shadow: 3px 3px 0px 1px #FFEB40;
 }
 
 .button:active {
