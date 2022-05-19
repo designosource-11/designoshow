@@ -195,7 +195,7 @@
         </div>
         <div class="program">
             <h2 class="bold">T-program Rex</h2>
-            <p>We would like to welcome y&#39;all to a dinoshow so great and <br>formidable that even an asteroid can&#39;t take it down.</p>
+            <p class="program-info">We would like to welcome y&#39;all to a dinoshow so great and formidable that even an asteroid can&#39;t take it down.</p>
             <div class="schedule">
                 <div class="schedule_item schedule_item_1">
                     <p class="time pixel">18.30h</p>
@@ -244,7 +244,7 @@
         window.cookieconsent.initialise({
             "palette": {
                 "popup": {
-                    "background": "#2489E7"
+                    "background": "#191919"
                 },
                 "button": {
                     "background": "#f1d600"
