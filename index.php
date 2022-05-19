@@ -10,8 +10,8 @@
                 session_start();
                 $_SESSION["message"] = $error;
             } else{
-                // $conn = new mysqli("localhost", "root", "", "dinoshow");
-                $conn = new mysqli("ID130716_designoshow.db.webhosting.be", "ID130716_designoshow", "XGgr%QBkqEj5", "ID130716_designoshow");
+                $conn = new mysqli("localhost", "root", "", "dinoshow");
+                // $conn = new mysqli("ID130716_designoshow.db.webhosting.be", "ID130716_designoshow", "XGgr%QBkqEj5", "ID130716_designoshow");
                 $guests = $conn->query("insert into guests (first_name, last_name, email, updates) values ('".$conn->real_escape_string($first_name)."', '".$conn->real_escape_string($last_name)."', '".$conn->real_escape_string($email)."', '".$conn->real_escape_string(1)."')");
                 $success = "<p class='message success'>Woop Woop! You are signed up for the show. Keep an eye on your mailbox for updates.</p>";
                 session_start();
@@ -150,7 +150,7 @@
             </section>
         </header>   
         <div class="sign_up" id="sign_up">
-            <h2 class="bold">Signosaur up</h2>
+            <h2 class="bold">Signosaure up</h2>
             <p>Be there or be rectangular.</p>
             <p>Sign up for dinos performing live on stage.</p>
             <?php if(!empty($_SESSION["message"])): ?>
@@ -159,7 +159,7 @@
             <form action="#sign_up" method="POST">
                 <input placeholder="First name" type="text" name="first_name">
                 <input placeholder="Last name" type="text" name="last_name">
-                <input placeholder="E-mail" type="email" name="email">
+                <input placeholder="E-mail" type="text" name="email">
                 <div class="agree">
                     <div class="checkbox_replace">
                         <input class="checkbox" type="checkbox" name="updates" unchecked>
@@ -211,12 +211,12 @@
                 </div>
                 <div class="schedule_item schedule_item_2">
                     <p class="time pixel">19:00</p>
-                    <p class="description regular">Start Dinoshow</p>
+                    <p class="description regular">Dinoshow</p>
                     <p class="extra regular">No raaaawrs during the show ok?</p>
                 </div>
                 <div class="schedule_item schedule_item_3">
                     <p class="time pixel">21:00</p>
-                    <p class="description regular">End Dinoshow & start reception</p>
+                    <p class="description regular">Reception</p>
                     <p class="extra regular">Exclusive meet and greet with the dinos</p>
                 </div>
                 <div class="schedule_item schedule_item_4">
