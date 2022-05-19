@@ -1059,6 +1059,11 @@ header {
   width: fit-content;
   color: #FFFFFF;
   margin: 30px auto 0 auto;
+  color: #FFEB40;
+}
+
+.sign_up form .policy:hover {
+  color: #2489E7;
 }
 
 .sign_up form .select_dinos {

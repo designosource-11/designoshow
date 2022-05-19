@@ -119,6 +119,11 @@
             width: fit-content;
             color: $txtColor;
             margin: 30px auto 0 auto;
+            color: $primaryYellow;
+
+            &:hover{
+                color: $primaryBlue;
+            }
         }
 
         .select_dinos {
