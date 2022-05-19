@@ -579,7 +579,7 @@ header {
           animation: updown 2s ease-in-out 0s infinite alternate;
   z-index: -5;
   text-decoration: none;
-  margin-top: 10rem;
+  margin-top: 0;
 }
 
 .cta span {
@@ -696,7 +696,7 @@ header {
     width: 8vw;
   }
   .cta {
-    margin-top: 1rem;
+    margin-top: -6rem;
   }
   .header_text h1 {
     font-size: 2.5rem;
@@ -911,7 +911,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 10rem 3rem;
+  margin: 10rem 3rem 10rem 3rem;
 }
 
 .sign_up h2 {
@@ -1064,7 +1064,7 @@ header {
 .sign_up form .select_dinos {
   display: none;
   position: absolute;
-  bottom: -110px;
+  bottom: 80px;
   right: -210px;
   width: 308px;
   height: -webkit-fit-content;
@@ -1132,7 +1132,7 @@ header {
     width: 50%;
   }
   .sign_up .select_dinos {
-    bottom: -110px !important;
+    bottom: 80px !important;
     right: -170px !important;
   }
   .sign_up .message {
@@ -1166,6 +1166,9 @@ header {
 }
 
 @media only screen and (max-width: 600px) {
+  .sign_up {
+    margin: 14rem 3rem 10rem 3rem;
+  }
   .sign_up form {
     width: 100%;
   }
@@ -1183,7 +1186,7 @@ header {
 
 .program {
   display: block;
-  margin: 6rem 3rem;
+  padding: 10vh 5vw;
 }
 
 .program h2 {

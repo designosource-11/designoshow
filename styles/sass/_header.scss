@@ -383,7 +383,7 @@ header{
     animation: updown 2s ease-in-out 0s infinite alternate;
     z-index: -5;
     text-decoration: none;
-    margin-top: 10rem;
+    margin-top: 0;
 
     span{
         font-size: 0.6rem;
@@ -500,7 +500,7 @@ header{
    }
 
     .cta{        
-        margin-top: 1rem;
+        margin-top: -6rem;
     }
 
    .header_text{
