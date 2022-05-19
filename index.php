@@ -50,7 +50,7 @@
                 <div class="header_text">
                     <h2 class="pixel">Get your <span>&#42;</span>ss over to</h2>
                     <h1 class="bold">The Dinoshow</h1>
-                    <p>21st of June, 18.30h @Stadsschouwburg, Mechelen</p>
+                    <p>21st of June, 18:30 at Stadsschouwburg Mechelen</p>
                 </div>
                 <div class="fien">
                     <img class="fien_1" src="./assets/team/teammember-1.jpg">
@@ -120,7 +120,7 @@
                 <div class="header_text">
                     <h2 class="pixel">Get your <span>&#42;</span>ss over to</h2>
                     <h1 class="bold">The Dinoshow</h1>
-                    <p>21st of June, 18.30h @Stadsschouwburg, Mechelen</p>
+                    <p>21st of June, 18:30 at Stadsschouwburg Mechelen</p>
                 </div>
                 <div class="dino1">
                     <img class="dino1_1" src="">
@@ -143,9 +143,9 @@
             </section>
         </header>   
         <div class="sign_up" id="sign_up">
-            <h2 class="bold">Signosaurus up</h2>
+            <h2 class="bold">Signosaur up</h2>
             <p>Be there or be rectangular.</p>
-            <p>Sign up for dino&#39;s performing live on stage.</p>
+            <p>Sign up for dinos performing live on stage.</p>
             <?php if(!empty($_SESSION["message"])): ?>
                 <?php echo $_SESSION["message"] ;?>
             <?php endif; ?>
@@ -198,23 +198,23 @@
             <p class="program-info">We would like to welcome y&#39;all to a dinoshow so great and formidable that even an asteroid can&#39;t take it down.</p>
             <div class="schedule">
                 <div class="schedule_item schedule_item_1">
-                    <p class="time pixel">18.30h</p>
-                    <p class="description regular">Doors open @Stadsschouwburg, Mechelen</p>
+                    <p class="time pixel">18:30</p>
+                    <p class="description regular">Doors open at Stadsschouwburg, Mechelen</p>
                     <p class="extra regular">It&#39;ll be safe from the asteroids, we promise</p>
                 </div>
                 <div class="schedule_item schedule_item_2">
-                    <p class="time pixel">19.00h</p>
+                    <p class="time pixel">19:00</p>
                     <p class="description regular">Start Dinoshow</p>
                     <p class="extra regular">No raaaawrs during the show ok?</p>
                 </div>
                 <div class="schedule_item schedule_item_3">
-                    <p class="time pixel">21.00h</p>
+                    <p class="time pixel">21:00</p>
                     <p class="description regular">End Dinoshow & start reception</p>
-                    <p class="extra regular">Exclusive meet and greet with the dino&#39;s</p>
+                    <p class="extra regular">Exclusive meet and greet with the dinos</p>
                 </div>
                 <div class="schedule_item schedule_item_4">
-                    <p class="time pixel">22.30h</p>
-                    <p class="description regular">End</p>
+                    <p class="time pixel">22:30</p>
+                    <p class="description regular">The end</p>
                     <p class="extra regular">Go ahead, on to your own caves now will ya?</p>
                 </div>
             </div>
@@ -222,7 +222,7 @@
         <div class="blocks">
             <div class="dresscode">
                 <h2 class="bold">A dresscode, rlly?</h2>
-                <p>Old school red carpet chique with a touch of crazy. Win a prize with the best outfit</p>
+                <p>Old school red carpet chique with a touch of crazy. Win a prize with the best outfit.</p>
                 <a class="pixel" href="https://www.pinterest.com/fiengerardi/dresscode-x-designoshow/" target="_blank">View outfit moodboard</a>
             </div>
             <div class="convinced">
