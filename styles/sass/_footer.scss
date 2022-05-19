@@ -2,7 +2,8 @@ footer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    margin: -2rem 15vw 10rem 15vw;
+    max-width: 1600px;
+    margin: -2rem auto 10rem auto;
     justify-items: center;
     align-items: center;
     gap: 3rem;
