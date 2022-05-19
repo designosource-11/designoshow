@@ -2,8 +2,7 @@
     if(!empty($_POST)) {
         $first_name = $_POST['first_name'];
         $last_name = $_POST['last_name'];
-        $email = $_POST['email'];        
-        $regex = '/[a-zA-Z0-9_.+-]+@[a-zA-Z0-9_.+-]+.[a-zA-Z]/';
+        $email = $_POST['email'];
         if (!empty($_POST['updates']) && !empty($first_name) && !empty($last_name) && !empty($email)) {
             if(!preg_match($regex, $email)){
                 $error = "<p class='message error'>Email does not match correct format</p>";
@@ -159,7 +158,7 @@
             <form action="#sign_up" method="POST">
                 <input placeholder="First name" type="text" name="first_name">
                 <input placeholder="Last name" type="text" name="last_name">
-                <input placeholder="E-mail" type="text" name="email">
+                <input placeholder="E-mail" type="email" name="email">
                 <div class="agree">
                     <div class="checkbox_replace">
                         <input class="checkbox" type="checkbox" name="updates" unchecked>
