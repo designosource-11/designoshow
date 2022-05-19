@@ -209,12 +209,12 @@
                 </div>
                 <div class="schedule_item schedule_item_3">
                     <p class="time pixel">21.00h</p>
-                    <p class="description regular">Einde show & start receptie</p>
+                    <p class="description regular">End Dinoshow & start reception</p>
                     <p class="extra regular">Exclusive meet and greet with the dino&#39;s</p>
                 </div>
                 <div class="schedule_item schedule_item_4">
                     <p class="time pixel">22.30h</p>
-                    <p class="description regular">Einde</p>
+                    <p class="description regular">End</p>
                     <p class="extra regular">Go ahead, on to your own caves now will ya?</p>
                 </div>
             </div>
