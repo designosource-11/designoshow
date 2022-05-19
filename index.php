@@ -2,10 +2,11 @@
     if(!empty($_POST)) {
         $first_name = $_POST['first_name'];
         $last_name = $_POST['last_name'];
-        $email = $_POST['email'];
+        $email = $_POST['email'];        
+        $regex = '/[a-zA-Z0-9_.+-]+@[a-zA-Z0-9_.+-]+.[a-zA-Z]/';
         if (!empty($_POST['updates']) && !empty($first_name) && !empty($last_name) && !empty($email)) {
             if(!preg_match($regex, $email)){
-                $error = "<p class='message error'>Email does not match correct format</p>";
+                $error = "<p class='message error'>Email doesn't match correct format</p>";
                 session_start();
                 $_SESSION["message"] = $error;
             } else{
