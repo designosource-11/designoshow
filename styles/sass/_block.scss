@@ -2,7 +2,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    margin: 10rem 3rem;
+    max-width: 1200px;
+    padding: 0 3rem;
+    margin: 10rem auto;
 
     div{        
         display: flex;
