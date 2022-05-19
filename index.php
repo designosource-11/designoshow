@@ -152,7 +152,7 @@
             <form action="#sign_up" method="POST">
                 <input placeholder="First name" type="text" name="first_name">
                 <input placeholder="Last name" type="text" name="last_name">
-                <input placeholder="E-mail" type="text" name="email">
+                <input placeholder="E-mail" type="email" name="email">
                 <div class="agree">
                     <div class="checkbox_replace">
                         <input class="checkbox" type="checkbox" name="updates" unchecked>
