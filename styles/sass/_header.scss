@@ -398,6 +398,12 @@ header{
     
 }
 
+.cc-floating{
+    span{
+        font-size: 1rem;
+    }
+}
+
  @media (max-width: 1920px) and (min-width: 1400px){
     .header{
         grid-template-columns: repeat(11, 7.7%);
