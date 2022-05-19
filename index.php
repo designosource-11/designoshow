@@ -2,14 +2,21 @@
     if(!empty($_POST)) {
         $first_name = $_POST['first_name'];
         $last_name = $_POST['last_name'];
-        $email = $_POST['email'];
+        $email = $_POST['email'];        
+        $regex = '/[a-zA-Z0-9_.+-]+@[a-zA-Z0-9_.+-]+.[a-zA-Z]/';
         if (!empty($_POST['updates']) && !empty($first_name) && !empty($last_name) && !empty($email)) {
-            // $conn = new mysqli("localhost", "root", "root", "dinoshow");
-            $conn = new mysqli("ID130716_designoshow.db.webhosting.be", "ID130716_designoshow", "XGgr%QBkqEj5", "ID130716_designoshow");
-            $guests = $conn->query("insert into guests (first_name, last_name, email, updates) values ('".$conn->real_escape_string($first_name)."', '".$conn->real_escape_string($last_name)."', '".$conn->real_escape_string($email)."', '".$conn->real_escape_string(1)."')");
-            $success = "<p class='message success'>Woop Woop! You are signed up for the show. Keep an eye on your mailbox for updates.</p>";
-            session_start();
-            $_SESSION["message"] = $success;
+            if(!preg_match($regex, $email)){
+                $error = "<p class='message error'>Email doesn't match correct format</p>";
+                session_start();
+                $_SESSION["message"] = $error;
+            } else{
+                // $conn = new mysqli("localhost", "root", "", "dinoshow");
+                $conn = new mysqli("ID130716_designoshow.db.webhosting.be", "ID130716_designoshow", "XGgr%QBkqEj5", "ID130716_designoshow");
+                $guests = $conn->query("insert into guests (first_name, last_name, email, updates) values ('".$conn->real_escape_string($first_name)."', '".$conn->real_escape_string($last_name)."', '".$conn->real_escape_string($email)."', '".$conn->real_escape_string(1)."')");
+                $success = "<p class='message success'>Woop Woop! You are signed up for the show. Keep an eye on your mailbox for updates.</p>";
+                session_start();
+                $_SESSION["message"] = $success;
+            }
         } else if (empty($_POST['updates']) || empty($first_name) || empty($last_name) || empty($email)){
             $error = "<p class='message error'>Please fill in all the fields</p>";
             session_start();
