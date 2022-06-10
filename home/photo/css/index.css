@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'Telegraf';
+    src: url('../assets/fonts/Telegraf-Bold.woff2') format('woff2'),
+        url('../assets/fonts/Telegraf-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Telegraf';
+    src: url('../assets/fonts/Telegraf-Regular.woff2') format('woff2'),
+        url('../assets/fonts/Telegraf-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'pixel';
+    src: url(../assets/fonts/pixelfj8pt1.normal.otf);
+}
+
+
+* {
+    font-family: Telegraf;
+    color: white;
+
+    margin: 0;
+}
+
+body {
+    background-image: url("./../assets/Texture.png");
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    width: 100vw;
+
+    background-color: black;
+
+    text-align: center;
+
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 7rem;
+
+    max-width: 500px;
+}
+
+.upload-wrapper {
+    width: 70%;
+    max-width: 305px;
+
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+.upload-wrapper img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.upload-wrapper p {
+    color: yellow;
+    padding-top: .2rem;
+    font-family: pixel;
+
+    font-smooth: never;
+    -webkit-font-smoothing: none;
+}
+
+#image {
+    position: absolute;
+    top: -500px;
+    left: -500px;
+}
+
+.btn-submit {
+    margin-top: 2rem;
+    background-color: yellow;
+    border: none;
+    outline: none;
+    color: black;
+    
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: .6rem;
+    padding-bottom: .6rem;
+
+    visibility: hidden;
+}
+
+.btn-submit:hover {
+    background-color: white;
+    color: black;
+}
+
+h2 {
+    font-size: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    font-weight: 100;
+}
+
+.success {
+    background-color: rgb(123, 250, 98);
+    width: 100vw;
+    color: black;
+    text-align: center;
+}
+
+.error {
+    background-color: rgb(255, 94, 94);
+    width: 100vw;
+    color: black;
+    text-align: center;
+}
+
+.poll-btn {
+    position: absolute;
+    bottom: 30px;
+    left: auto;
+    right: auto;
+    text-decoration: none;
+    color: black;
+    background-color: #FFEB40;
+
+    width: 300px;
+    font-family: pixel;
+    cursor: pointer;
+    font-size: 1.4rem;
+
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+    text-align: center;
+}

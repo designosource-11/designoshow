@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'Telegraf';
+    src: url('../assets/fonts/Telegraf-Bold.woff2') format('woff2'),
+        url('../assets/fonts/Telegraf-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Telegraf';
+    src: url('../assets/fonts/Telegraf-Regular.woff2') format('woff2'),
+        url('../assets/fonts/Telegraf-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'pixel';
+    src: url(../assets/fonts/pixelfj8pt1.normal.otf);
+}
+
+* {
+    margin: 0;
+    font-family: Telegraf;
+}
+
+body {
+    background-color: black;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+}
+
+.image-wrapper {
+    aspect-ratio: 1;
+
+    animation: loadAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+    outline: none;
+    border: none;
+    background: none;
+    padding: 0;
+
+    display: relative;
+}
+
+.accept-btn, .revoke-btn {
+    position: absolute;
+    bottom: 5px;
+
+    width: 60px;
+
+    cursor: pointer;
+}
+
+.accept-btn img, .revoke-btn img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.accept-btn {
+    left: 5px;
+}
+
+.revoke-btn {
+    right: 5px;
+}
+
+
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-top: 1.6rem;
+    margin-bottom: .8rem;
+}
+
+.yellow {
+    color: yellow;
+
+    font-family: pixel;
+
+    font-smooth: never;
+    -webkit-font-smoothing: none;
+}
+
+.white {
+    color: white;
+    text-align: center;
+    margin-bottom: 1.6rem;
+    font-size: 1.3rem;
+}
+  
+@keyframes loadAnimation {
+    0% {
+        opacity: 0;
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        -webkit-transform: scale(0, 0);
+        transform: scale(0, 0);
+      }
+    
+      90% {
+        opacity: 1;
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        -webkit-transform: scale(0.9, 0.9);
+        transform: scale(0.9, 0.9);
+      }
+    
+      100% {
+        opacity: 1;
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+      }
+}
+
