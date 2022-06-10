@@ -79,7 +79,7 @@ function ajaxTimer()
     })
 }
 
-let intervalDesignoPost = setInterval(addDesignoPosts, 2000);
+let intervalDesignoPost = setInterval(addDesignoPosts, 60000);
 
 let designoPostCounter = 0;
 function addDesignoPosts() {
