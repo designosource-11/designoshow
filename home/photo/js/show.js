@@ -1,7 +1,10 @@
 let designoPosts = ["./assets/designoPosts/qr_black.png",
-                    "./assets/designoPosts/qr_blue.png",
+                    "./assets/designoPosts/dinoshow_post.png",
+                    "./assets/designoPosts/qr_yellow.png",
+                    "./assets/designoPosts/dino_post.png",
                     "./assets/designoPosts/qr_red.png",
-                    "./assets/designoPosts/qr_yellow.png"];
+                    "./assets/designoPosts/designosource_post.png",
+                    "./assets/designoPosts/qr_blue.png"];
 
 let amountAudiencePosts = 0;
 
