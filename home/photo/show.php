@@ -11,7 +11,7 @@
 
 </head>
 <body>
-    <h1><span class="yellow">upload.designosource.be</span></h1>
+    <h1><span class="yellow">show.designosource.be/home/photo</span></h1>
     <p class="white">Post your picture here!</p>
 
     <section class="image-grid">

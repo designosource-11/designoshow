@@ -1,3 +1,10 @@
+let designoPosts = ["./assets/designoPosts/qr_black.png",
+                    "./assets/designoPosts/qr_blue.png",
+                    "./assets/designoPosts/qr_red.png",
+                    "./assets/designoPosts/qr_yellow.png"];
+
+let amountAudiencePosts = 0;
+
 let grid = document.querySelector('.image-grid');
 let lastTime = '1069-06-02 10:49:33';
 
@@ -35,7 +42,6 @@ let intervalAjax = setInterval(ajaxTimer, 10000);
 
 function ajaxTimer()
 {
-    console.log('AJAX');
     let formData = new FormData();
     formData.append("lastTime", lastTime);
 
@@ -58,6 +64,8 @@ function ajaxTimer()
             imageWrapper.appendChild(imgElement);
             
             grid.prepend(imageWrapper);
+            amountAudiencePosts++;
+
         });
 
         if(result['result'].length == 0) {
@@ -69,4 +77,31 @@ function ajaxTimer()
     .catch(error => {
         console.error("Error:", error);
     })
+}
+
+let intervalDesignoPost = setInterval(addDesignoPosts, 2000);
+
+let designoPostCounter = 0;
+function addDesignoPosts() {
+    if (amountAudiencePosts < 6) {
+        return;
+    }
+    amountAudiencePosts = 0;
+
+    let imageWrapper = document.createElement('button');
+    let imgElement = document.createElement('img');
+
+    imageWrapper.classList.add('image-wrapper');
+    imgElement.classList.add('img');
+
+    imgElement.src = designoPosts[designoPostCounter];
+    imageWrapper.appendChild(imgElement);
+
+    grid.prepend(imageWrapper);
+
+    designoPostCounter++;
+
+    if(designoPostCounter == designoPosts.length) {
+        designoPostCounter = 0;
+    }
 }
