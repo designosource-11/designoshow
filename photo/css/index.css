@@ -176,7 +176,7 @@ nav {
 }
 
 .pollNav {
-    background-image: url("./../assets/pollNav.png");
+    background-image: url("./../assets/pollNav.svg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 33px;
@@ -184,7 +184,7 @@ nav {
 }
 
 .imgNav {
-    background-image: url("./../assets/imgNav.png");
+    background-image: url("./../assets/imgNav.svg");
     background-repeat: no-repeat;
     width: 33px;
     height: 33px;

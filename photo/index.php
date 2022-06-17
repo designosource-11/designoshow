@@ -53,7 +53,7 @@ if(isset($_FILES['image'])){
       <button class="upload-wrapper">
           <form action="" method="POST" enctype="multipart/form-data" onsubmit="submitForm(event)">
               <label id="imageLabel" for="image">
-                <img id="imageSelect" src="./assets/uploadImage.png" for="image">
+                <img id="imageSelect" src="./assets/uploadImage.svg" for="image">
               </label>
               
               <input type="file" id="image" name="image" accept="image/x-png,image/jpeg" />
