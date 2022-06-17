@@ -65,13 +65,13 @@ if(isset($_FILES['image'])){
 
     <nav>
       <div class="pollWrapper disabled-nav">
-        <a href="#" class="pollNav"></a>
-        <a href="#" class="textNav">The poll</a>
+        <a href="./../poll" class="pollNav"></a>
+        <a href="./../poll" class="textNav">The poll</a>
       </div>
 
       <div class="imgWrapper">
-        <a href="#" class="imgNav"></a>
-        <a href="#" class="textNav">The photowall</a>
+        <a href="./../photo" class="imgNav"></a>
+        <a href="./../photo" class="textNav">The photowall</a>
       </div>
     </nav>
 
