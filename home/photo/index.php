@@ -26,7 +26,6 @@ if(isset($_FILES['image'])){
 }
 
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,8 +53,7 @@ if(isset($_FILES['image'])){
       <button class="upload-wrapper">
           <form action="" method="POST" enctype="multipart/form-data" onsubmit="submitForm(event)">
               <label id="imageLabel" for="image">
-                <img id="imageSelect" src="./assets/ImgUpload.png" for="image">
-                <p for="image">CLICK HERE TO UPLOAD</p>
+                <img id="imageSelect" src="./assets/uploadImage.png" for="image">
               </label>
               
               <input type="file" id="image" name="image" accept="image/x-png,image/jpeg" />
@@ -65,7 +63,17 @@ if(isset($_FILES['image'])){
       </button>
     </section>
 
-    <a href=".././poll/" class="poll-btn btn">POLL VOTING</a>
+    <nav>
+      <div class="pollWrapper disabled-nav">
+        <a href="#" class="pollNav"></a>
+        <a href="#" class="textNav">The poll</a>
+      </div>
+
+      <div class="imgWrapper">
+        <a href="#" class="imgNav"></a>
+        <a href="#" class="textNav">The photowall</a>
+      </div>
+    </nav>
 
     <script src="./js/index.js"></script>
 </body>
