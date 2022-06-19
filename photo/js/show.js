@@ -29,6 +29,7 @@ fetch("./ajax/getPicture.php", {
         imgElement.classList.add('img');
 
         imgElement.src = img['url'];
+        imgElement.dataset.id = img['id'];
 
         imageWrapper.appendChild(imgElement);
         
